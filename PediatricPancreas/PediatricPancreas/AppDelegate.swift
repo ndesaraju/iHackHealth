@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import ResearchKit
+import CareKitUI
+import CareKitStore
+import CareKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

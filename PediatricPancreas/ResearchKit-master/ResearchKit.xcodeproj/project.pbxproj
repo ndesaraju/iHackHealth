@@ -164,11 +164,11 @@
 		510743FA227C935400574EC4 /* EyeActivitySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510743F9227C935400574EC4 /* EyeActivitySlider.swift */; };
 		510743FC227C942E00574EC4 /* ORKLandoltCStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510743FB227C942E00574EC4 /* ORKLandoltCStep.swift */; };
 		510743FE227C945F00574EC4 /* ORKLandoltCStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510743FD227C945F00574EC4 /* ORKLandoltCStepViewController.swift */; };
+		515310CF233570CF007BCA58 /* ORKDontKnowButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 515310CD233570CF007BCA58 /* ORKDontKnowButton.h */; };
+		515310D0233570CF007BCA58 /* ORKDontKnowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 515310CE233570CF007BCA58 /* ORKDontKnowButton.m */; };
 		5185A799227C960500A570DE /* ORKLandoltCStepContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5185A798227C960500A570DE /* ORKLandoltCStepContentView.swift */; };
 		51EBC32E2286254E00FF338C /* ExtensionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EBC32D2286254E00FF338C /* ExtensionModel.swift */; };
 		51EBC3302288D9BF00FF338C /* ORKLandoltCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EBC32F2288D9BF00FF338C /* ORKLandoltCResult.swift */; };
-		515310CF233570CF007BCA58 /* ORKDontKnowButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 515310CD233570CF007BCA58 /* ORKDontKnowButton.h */; };
-		515310D0233570CF007BCA58 /* ORKDontKnowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 515310CE233570CF007BCA58 /* ORKDontKnowButton.m */; };
 		6146D0A31B84A91E0068491D /* ORKGraphChartAccessibilityElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6146D0A11B84A91E0068491D /* ORKGraphChartAccessibilityElement.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6146D0A41B84A91E0068491D /* ORKGraphChartAccessibilityElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 6146D0A21B84A91E0068491D /* ORKGraphChartAccessibilityElement.m */; };
 		618DA04E1A93D0D600E63AA8 /* ORKAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 618DA0481A93D0D600E63AA8 /* ORKAccessibility.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -254,8 +254,6 @@
 		65EF3C0721B7BAE6007BE0D6 /* ORKTouchAbilitySwipeTrial.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EF3C0521B7BAE6007BE0D6 /* ORKTouchAbilitySwipeTrial.m */; };
 		65EF3C0A21B7BE2C007BE0D6 /* ORKTouchAbilitySwipeContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65EF3C0821B7BE2C007BE0D6 /* ORKTouchAbilitySwipeContentView.h */; };
 		65EF3C0B21B7BE2C007BE0D6 /* ORKTouchAbilitySwipeContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EF3C0921B7BE2C007BE0D6 /* ORKTouchAbilitySwipeContentView.m */; };
-		7118AC5A20BF6A0000D7A6BB /* Noise.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7118AC5920BF6A0000D7A6BB /* Noise.wav */; };
-		7118AC5D20BF6A1200D7A6BB /* Window.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7118AC5B20BF6A1200D7A6BB /* Window.wav */; };
 		7118AC6720BF6A3A00D7A6BB /* Sentence7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7118AC6020BF6A3900D7A6BB /* Sentence7.wav */; };
 		7118AC6820BF6A3A00D7A6BB /* Sentence4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7118AC6120BF6A3A00D7A6BB /* Sentence4.wav */; };
 		7118AC6920BF6A3A00D7A6BB /* Sentence6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7118AC6220BF6A3A00D7A6BB /* Sentence6.wav */; };
@@ -1060,11 +1058,11 @@
 		510743F9227C935400574EC4 /* EyeActivitySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeActivitySlider.swift; sourceTree = "<group>"; };
 		510743FB227C942E00574EC4 /* ORKLandoltCStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORKLandoltCStep.swift; sourceTree = "<group>"; };
 		510743FD227C945F00574EC4 /* ORKLandoltCStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORKLandoltCStepViewController.swift; sourceTree = "<group>"; };
+		515310CD233570CF007BCA58 /* ORKDontKnowButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKDontKnowButton.h; sourceTree = "<group>"; };
+		515310CE233570CF007BCA58 /* ORKDontKnowButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORKDontKnowButton.m; sourceTree = "<group>"; };
 		5185A798227C960500A570DE /* ORKLandoltCStepContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORKLandoltCStepContentView.swift; sourceTree = "<group>"; };
 		51EBC32D2286254E00FF338C /* ExtensionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionModel.swift; sourceTree = "<group>"; };
 		51EBC32F2288D9BF00FF338C /* ORKLandoltCResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORKLandoltCResult.swift; sourceTree = "<group>"; };
-		515310CD233570CF007BCA58 /* ORKDontKnowButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKDontKnowButton.h; sourceTree = "<group>"; };
-		515310CE233570CF007BCA58 /* ORKDontKnowButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORKDontKnowButton.m; sourceTree = "<group>"; };
 		6146D0A11B84A91E0068491D /* ORKGraphChartAccessibilityElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKGraphChartAccessibilityElement.h; sourceTree = "<group>"; };
 		6146D0A21B84A91E0068491D /* ORKGraphChartAccessibilityElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKGraphChartAccessibilityElement.m; sourceTree = "<group>"; };
 		618DA0481A93D0D600E63AA8 /* ORKAccessibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKAccessibility.h; sourceTree = "<group>"; };
@@ -4272,7 +4270,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				tr,
