@@ -3,14 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C42BA55AA9C30B4EBAF4D10 /* Pods_PediatricPancreas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC5829C1A7FDF4B6B4BCCDA /* Pods_PediatricPancreas.framework */; };
+		5DDB49170E9C584BBB8ADDDC /* Pods_PediatricPancreas_PediatricPancreasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627838B2FEF3755DEC94D46E /* Pods_PediatricPancreas_PediatricPancreasUITests.framework */; };
+		641CFA7B835315AE0F95162D /* Pods_PediatricPancreasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A354E72CFCC8271F32B8A6 /* Pods_PediatricPancreasTests.framework */; };
 		758D7F5223F4CDD7006B6A9C /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758D7F4F23F4CDB1006B6A9C /* ResearchKit.framework */; };
 		758D7F5323F4CDD7006B6A9C /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 758D7F4F23F4CDB1006B6A9C /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		758D7F6B23F4CECE006B6A9C /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758D7F6823F4CEC5006B6A9C /* CareKit.framework */; };
 		758D7F6C23F4CECE006B6A9C /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 758D7F6823F4CEC5006B6A9C /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B4CD9C123FAC3E00053736E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B4CD9BB23FAC3E00053736E /* GoogleService-Info.plist */; };
 		AB9EF51D23F4C26700BC0139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9EF51C23F4C26700BC0139 /* AppDelegate.swift */; };
 		AB9EF51F23F4C26700BC0139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9EF51E23F4C26700BC0139 /* SceneDelegate.swift */; };
 		AB9EF52123F4C26700BC0139 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9EF52023F4C26700BC0139 /* ContentView.swift */; };
@@ -82,9 +86,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AB61D4F269E2A6399C88007 /* Pods-PediatricPancreas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas.release.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas/Pods-PediatricPancreas.release.xcconfig"; sourceTree = "<group>"; };
+		19685DC0E64DA8567F238DFB /* Pods-PediatricPancreasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreasTests.release.xcconfig"; path = "Target Support Files/Pods-PediatricPancreasTests/Pods-PediatricPancreasTests.release.xcconfig"; sourceTree = "<group>"; };
+		627838B2FEF3755DEC94D46E /* Pods_PediatricPancreas_PediatricPancreasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PediatricPancreas_PediatricPancreasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		758D7F4823F4CDB1006B6A9C /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		758D7F6023F4CEC5006B6A9C /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = "CareKit-master/CareKit/CareKit.xcodeproj"; sourceTree = "<group>"; };
 		758D7F6D23F4CFC9006B6A9C /* PediatricPancreas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PediatricPancreas.entitlements; sourceTree = "<group>"; };
+		75E45119AEB839753A050A94 /* Pods-PediatricPancreas-PediatricPancreasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas-PediatricPancreasUITests.release.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas-PediatricPancreasUITests/Pods-PediatricPancreas-PediatricPancreasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		78E4CD127DB76208AD274D1E /* Pods-PediatricPancreas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas.debug.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas/Pods-PediatricPancreas.debug.xcconfig"; sourceTree = "<group>"; };
+		7B4CD9BB23FAC3E00053736E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		805C3B4517638F7F05D1F6F5 /* Pods-PediatricPancreasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreasTests.debug.xcconfig"; path = "Target Support Files/Pods-PediatricPancreasTests/Pods-PediatricPancreasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EC5829C1A7FDF4B6B4BCCDA /* Pods_PediatricPancreas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PediatricPancreas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB38888A23F4C6C400AB9EE4 /* CareKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CareKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9EF51923F4C26700BC0139 /* PediatricPancreas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PediatricPancreas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9EF51C23F4C26700BC0139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +112,8 @@
 		AB9EF53A23F4C26E00BC0139 /* PediatricPancreasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PediatricPancreasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9EF53E23F4C26E00BC0139 /* PediatricPancreasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PediatricPancreasUITests.swift; sourceTree = "<group>"; };
 		AB9EF54023F4C26E00BC0139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A354E72CFCC8271F32B8A6 /* Pods_PediatricPancreasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PediatricPancreasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5C95A95239257E7BC6DECC /* Pods-PediatricPancreas-PediatricPancreasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas-PediatricPancreasUITests.debug.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas-PediatricPancreasUITests/Pods-PediatricPancreas-PediatricPancreasUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,7 @@
 			files = (
 				758D7F6B23F4CECE006B6A9C /* CareKit.framework in Frameworks */,
 				758D7F5223F4CDD7006B6A9C /* ResearchKit.framework in Frameworks */,
+				0C42BA55AA9C30B4EBAF4D10 /* Pods_PediatricPancreas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641CFA7B835315AE0F95162D /* Pods_PediatricPancreasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DDB49170E9C584BBB8ADDDC /* Pods_PediatricPancreas_PediatricPancreasUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				AB38888A23F4C6C400AB9EE4 /* CareKitUI.framework */,
+				9EC5829C1A7FDF4B6B4BCCDA /* Pods_PediatricPancreas.framework */,
+				627838B2FEF3755DEC94D46E /* Pods_PediatricPancreas_PediatricPancreasUITests.framework */,
+				E1A354E72CFCC8271F32B8A6 /* Pods_PediatricPancreasTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +185,7 @@
 				AB9EF53D23F4C26E00BC0139 /* PediatricPancreasUITests */,
 				AB9EF51A23F4C26700BC0139 /* Products */,
 				AB38887023F4C49000AB9EE4 /* Frameworks */,
+				F19EF0294D25002281777085 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +208,7 @@
 				AB9EF52023F4C26700BC0139 /* ContentView.swift */,
 				AB9EF52223F4C26E00BC0139 /* Assets.xcassets */,
 				AB9EF52723F4C26E00BC0139 /* LaunchScreen.storyboard */,
+				7B4CD9BB23FAC3E00053736E /* GoogleService-Info.plist */,
 				AB9EF52A23F4C26E00BC0139 /* Info.plist */,
 				AB9EF52423F4C26E00BC0139 /* Preview Content */,
 			);
@@ -219,6 +241,19 @@
 			path = PediatricPancreasUITests;
 			sourceTree = "<group>";
 		};
+		F19EF0294D25002281777085 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78E4CD127DB76208AD274D1E /* Pods-PediatricPancreas.debug.xcconfig */,
+				0AB61D4F269E2A6399C88007 /* Pods-PediatricPancreas.release.xcconfig */,
+				EC5C95A95239257E7BC6DECC /* Pods-PediatricPancreas-PediatricPancreasUITests.debug.xcconfig */,
+				75E45119AEB839753A050A94 /* Pods-PediatricPancreas-PediatricPancreasUITests.release.xcconfig */,
+				805C3B4517638F7F05D1F6F5 /* Pods-PediatricPancreasTests.debug.xcconfig */,
+				19685DC0E64DA8567F238DFB /* Pods-PediatricPancreasTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,10 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB9EF54323F4C26E00BC0139 /* Build configuration list for PBXNativeTarget "PediatricPancreas" */;
 			buildPhases = (
+				CCED2A12F92AF276D70D7CBC /* [CP] Check Pods Manifest.lock */,
 				AB9EF51523F4C26700BC0139 /* Sources */,
 				AB9EF51623F4C26700BC0139 /* Frameworks */,
 				AB9EF51723F4C26700BC0139 /* Resources */,
 				758D7F5423F4CDD7006B6A9C /* Embed Frameworks */,
+				C694CA1150C8F4D1C097DE0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB9EF54623F4C26E00BC0139 /* Build configuration list for PBXNativeTarget "PediatricPancreasTests" */;
 			buildPhases = (
+				2B2201B2662031AB5C98A5CA /* [CP] Check Pods Manifest.lock */,
 				AB9EF52B23F4C26E00BC0139 /* Sources */,
 				AB9EF52C23F4C26E00BC0139 /* Frameworks */,
 				AB9EF52D23F4C26E00BC0139 /* Resources */,
@@ -262,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB9EF54923F4C26E00BC0139 /* Build configuration list for PBXNativeTarget "PediatricPancreasUITests" */;
 			buildPhases = (
+				A28244F246DDBC82DFC948CB /* [CP] Check Pods Manifest.lock */,
 				AB9EF53623F4C26E00BC0139 /* Sources */,
 				AB9EF53723F4C26E00BC0139 /* Frameworks */,
 				AB9EF53823F4C26E00BC0139 /* Resources */,
+				C60A7D783E29F9CC8446050E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB9EF52923F4C26E00BC0139 /* LaunchScreen.storyboard in Resources */,
+				7B4CD9C123FAC3E00053736E /* GoogleService-Info.plist in Resources */,
 				AB9EF52623F4C26E00BC0139 /* Preview Assets.xcassets in Resources */,
 				AB9EF52323F4C26E00BC0139 /* Assets.xcassets in Resources */,
 			);
@@ -386,6 +427,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B2201B2662031AB5C98A5CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PediatricPancreasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A28244F246DDBC82DFC948CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PediatricPancreas-PediatricPancreasUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C60A7D783E29F9CC8446050E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas-PediatricPancreasUITests/Pods-PediatricPancreas-PediatricPancreasUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas-PediatricPancreasUITests/Pods-PediatricPancreas-PediatricPancreasUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas-PediatricPancreasUITests/Pods-PediatricPancreas-PediatricPancreasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C694CA1150C8F4D1C097DE0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas/Pods-PediatricPancreas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas/Pods-PediatricPancreas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas/Pods-PediatricPancreas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCED2A12F92AF276D70D7CBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PediatricPancreas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB9EF51523F4C26700BC0139 /* Sources */ = {
@@ -557,6 +701,7 @@
 		};
 		AB9EF54423F4C26E00BC0139 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E4CD127DB76208AD274D1E /* Pods-PediatricPancreas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PediatricPancreas/PediatricPancreas.entitlements;
@@ -578,6 +723,7 @@
 		};
 		AB9EF54523F4C26E00BC0139 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB61D4F269E2A6399C88007 /* Pods-PediatricPancreas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PediatricPancreas/PediatricPancreas.entitlements;
@@ -599,6 +745,7 @@
 		};
 		AB9EF54723F4C26E00BC0139 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805C3B4517638F7F05D1F6F5 /* Pods-PediatricPancreasTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -621,6 +768,7 @@
 		};
 		AB9EF54823F4C26E00BC0139 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19685DC0E64DA8567F238DFB /* Pods-PediatricPancreasTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,6 +791,7 @@
 		};
 		AB9EF54A23F4C26E00BC0139 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5C95A95239257E7BC6DECC /* Pods-PediatricPancreas-PediatricPancreasUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -663,6 +812,7 @@
 		};
 		AB9EF54B23F4C26E00BC0139 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E45119AEB839753A050A94 /* Pods-PediatricPancreas-PediatricPancreasUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

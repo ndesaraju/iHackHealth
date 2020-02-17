@@ -1,0 +1,6 @@
+framework module Pods_PediatricPancreas {
+  umbrella header "Pods-PediatricPancreas-umbrella.h"
+
+  export *
+  module * { export * }
+}
