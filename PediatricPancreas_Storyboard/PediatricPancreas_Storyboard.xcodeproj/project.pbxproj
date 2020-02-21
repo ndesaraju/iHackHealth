@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,8 @@
 		759E149E23FE08CF001A2E7A /* CareKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759E148A23FE0862001A2E7A /* CareKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		759E149F23FE08D6001A2E7A /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E149423FE086C001A2E7A /* ResearchKit.framework */; };
 		759E14A023FE08D6001A2E7A /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759E149423FE086C001A2E7A /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BB1AAC723FE1BEE009FD83C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BB1AAC623FE1BEE009FD83C /* GoogleService-Info.plist */; };
+		EBEE648A4B99E88BDBEE7BE3 /* Pods_PediatricPancreas_Storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223A3D0F2FAB24511D190436 /* Pods_PediatricPancreas_Storyboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		223A3D0F2FAB24511D190436 /* Pods_PediatricPancreas_Storyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PediatricPancreas_Storyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E145923FE0832001A2E7A /* PediatricPancreas_Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PediatricPancreas_Storyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759E145C23FE0832001A2E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		759E145E23FE0832001A2E7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +115,9 @@
 		759E147B23FE085B001A2E7A /* CareKitStore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKitStore.xcodeproj; path = "CareKit-master/CareKitStore/CareKitStore.xcodeproj"; sourceTree = "<group>"; };
 		759E148423FE0862001A2E7A /* CareKitUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKitUI.xcodeproj; path = "CareKit-master/CareKitUI/CareKitUI.xcodeproj"; sourceTree = "<group>"; };
 		759E148D23FE086B001A2E7A /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		7BB1AAC623FE1BEE009FD83C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6F5CA667EF6199DC8282977 /* Pods-PediatricPancreas_Storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas_Storyboard.release.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard.release.xcconfig"; sourceTree = "<group>"; };
+		BA0BC2D07EC9CF4FE884FD9E /* Pods-PediatricPancreas_Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas_Storyboard.debug.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,12 +129,22 @@
 				759E149823FE08C9001A2E7A /* CareKit.framework in Frameworks */,
 				759E149F23FE08D6001A2E7A /* ResearchKit.framework in Frameworks */,
 				759E149D23FE08CF001A2E7A /* CareKitUI.framework in Frameworks */,
+				EBEE648A4B99E88BDBEE7BE3 /* Pods_PediatricPancreas_Storyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2906BE01BEBD5CE1999E5BF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA0BC2D07EC9CF4FE884FD9E /* Pods-PediatricPancreas_Storyboard.debug.xcconfig */,
+				A6F5CA667EF6199DC8282977 /* Pods-PediatricPancreas_Storyboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		759E145023FE0832001A2E7A = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +155,7 @@
 				759E145B23FE0832001A2E7A /* PediatricPancreas_Storyboard */,
 				759E145A23FE0832001A2E7A /* Products */,
 				759E149723FE08C9001A2E7A /* Frameworks */,
+				2906BE01BEBD5CE1999E5BF5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +176,7 @@
 				759E146223FE0832001A2E7A /* Main.storyboard */,
 				759E146523FE0833001A2E7A /* Assets.xcassets */,
 				759E146723FE0834001A2E7A /* LaunchScreen.storyboard */,
+				7BB1AAC623FE1BEE009FD83C /* GoogleService-Info.plist */,
 				759E146A23FE0834001A2E7A /* Info.plist */,
 			);
 			path = PediatricPancreas_Storyboard;
@@ -203,6 +221,7 @@
 		759E149723FE08C9001A2E7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				223A3D0F2FAB24511D190436 /* Pods_PediatricPancreas_Storyboard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,10 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 759E146D23FE0834001A2E7A /* Build configuration list for PBXNativeTarget "PediatricPancreas_Storyboard" */;
 			buildPhases = (
+				73ECC5DA37AE6D401D82BE9B /* [CP] Check Pods Manifest.lock */,
 				759E145523FE0832001A2E7A /* Sources */,
 				759E145623FE0832001A2E7A /* Frameworks */,
 				759E145723FE0832001A2E7A /* Resources */,
 				759E149A23FE08C9001A2E7A /* Embed Frameworks */,
+				4DB37C3DAA31609D82F7A3C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,11 +366,54 @@
 			files = (
 				759E146923FE0834001A2E7A /* LaunchScreen.storyboard in Resources */,
 				759E146623FE0833001A2E7A /* Assets.xcassets in Resources */,
+				7BB1AAC723FE1BEE009FD83C /* GoogleService-Info.plist in Resources */,
 				759E146423FE0832001A2E7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DB37C3DAA31609D82F7A3C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73ECC5DA37AE6D401D82BE9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PediatricPancreas_Storyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		759E145523FE0832001A2E7A /* Sources */ = {
@@ -500,6 +564,7 @@
 		};
 		759E146E23FE0834001A2E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0BC2D07EC9CF4FE884FD9E /* Pods-PediatricPancreas_Storyboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,7 +574,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "example.company.PediatricPancreas-Storyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iHackHealth.PediatricPancreasStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,6 +583,7 @@
 		};
 		759E146F23FE0834001A2E7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F5CA667EF6199DC8282977 /* Pods-PediatricPancreas_Storyboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,7 +593,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "example.company.PediatricPancreas-Storyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iHackHealth.PediatricPancreasStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
