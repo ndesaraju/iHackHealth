@@ -7,22 +7,31 @@
 //
 
 import UIKit
-import ResearchKit
-import CareKit
 import FirebaseDatabase
+import FirebaseStorage
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var imageViewer: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let ref = Database.database().reference()
+        //let ref = Database.database().reference()
+        let storage =  Storage.storage().reference()
+        let tempImageRef = storage.child("test/img1.jpg")
         
-        ref.child("someid").observeSingleEvent(of: .value)
-            { (snapshot) in
-                let myName = snapshot.value as? String
+        tempImageRef.getData(maxSize: 1*1000*1000) { (data, error) in
+            if error == nil{
+                print(data)
+                
+                self.imageViewer.image = UIImage(data: data!)
+                
+            }else{
+                print(error?.localizedDescription)
+            }
         }
+        
         
     }
 

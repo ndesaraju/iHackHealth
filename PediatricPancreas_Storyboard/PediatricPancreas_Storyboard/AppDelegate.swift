@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import CareKit
-import ResearchKit
 import Firebase
 
 @UIApplicationMain

@@ -13,76 +13,9 @@
 		759E146423FE0832001A2E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759E146223FE0832001A2E7A /* Main.storyboard */; };
 		759E146623FE0833001A2E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759E146523FE0833001A2E7A /* Assets.xcassets */; };
 		759E146923FE0834001A2E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759E146723FE0834001A2E7A /* LaunchScreen.storyboard */; };
-		759E149823FE08C9001A2E7A /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E147823FE0856001A2E7A /* CareKit.framework */; };
-		759E149923FE08C9001A2E7A /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759E147823FE0856001A2E7A /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		759E149B23FE08CC001A2E7A /* CareKitStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E148123FE085B001A2E7A /* CareKitStore.framework */; };
-		759E149C23FE08CC001A2E7A /* CareKitStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759E148123FE085B001A2E7A /* CareKitStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		759E149D23FE08CF001A2E7A /* CareKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E148A23FE0862001A2E7A /* CareKitUI.framework */; };
-		759E149E23FE08CF001A2E7A /* CareKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759E148A23FE0862001A2E7A /* CareKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		759E149F23FE08D6001A2E7A /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759E149423FE086C001A2E7A /* ResearchKit.framework */; };
-		759E14A023FE08D6001A2E7A /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759E149423FE086C001A2E7A /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7BB1AAC723FE1BEE009FD83C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BB1AAC623FE1BEE009FD83C /* GoogleService-Info.plist */; };
 		EBEE648A4B99E88BDBEE7BE3 /* Pods_PediatricPancreas_Storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223A3D0F2FAB24511D190436 /* Pods_PediatricPancreas_Storyboard.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		759E147723FE0856001A2E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 759E147023FE0856001A2E7A /* CareKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
-			remoteInfo = CareKit;
-		};
-		759E147923FE0856001A2E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 759E147023FE0856001A2E7A /* CareKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5196C7F9226F8F8F00F1C2A2;
-			remoteInfo = CareKitTests;
-		};
-		759E148023FE085B001A2E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 759E147B23FE085B001A2E7A /* CareKitStore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E784B8F82232EED600736CA5;
-			remoteInfo = CareKitStore;
-		};
-		759E148223FE085B001A2E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 759E147B23FE085B001A2E7A /* CareKitStore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E784B9012232EED600736CA5;
-			remoteInfo = CareKitStoreTests;
-		};
-		759E148923FE0862001A2E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 759E148423FE0862001A2E7A /* CareKitUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5174225B224185290054E97C;
-			remoteInfo = CareKitUI;
-		};
-		759E148B23FE0862001A2E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 759E148423FE0862001A2E7A /* CareKitUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 512B012E22C2F82900ABCB1D;
-			remoteInfo = CareKitUITests;
-		};
-		759E149323FE086C001A2E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 759E148D23FE086B001A2E7A /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B183A5951A8535D100C76870;
-			remoteInfo = ResearchKit;
-		};
-		759E149523FE086C001A2E7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 759E148D23FE086B001A2E7A /* ResearchKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
-			remoteInfo = ResearchKitTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		759E149A23FE08C9001A2E7A /* Embed Frameworks */ = {
@@ -91,10 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				759E149C23FE08CC001A2E7A /* CareKitStore.framework in Embed Frameworks */,
-				759E149923FE08C9001A2E7A /* CareKit.framework in Embed Frameworks */,
-				759E14A023FE08D6001A2E7A /* ResearchKit.framework in Embed Frameworks */,
-				759E149E23FE08CF001A2E7A /* CareKitUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,10 +40,6 @@
 		759E146523FE0833001A2E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		759E146823FE0834001A2E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		759E146A23FE0834001A2E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		759E147023FE0856001A2E7A /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = "CareKit-master/CareKit/CareKit.xcodeproj"; sourceTree = "<group>"; };
-		759E147B23FE085B001A2E7A /* CareKitStore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKitStore.xcodeproj; path = "CareKit-master/CareKitStore/CareKitStore.xcodeproj"; sourceTree = "<group>"; };
-		759E148423FE0862001A2E7A /* CareKitUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKitUI.xcodeproj; path = "CareKit-master/CareKitUI/CareKitUI.xcodeproj"; sourceTree = "<group>"; };
-		759E148D23FE086B001A2E7A /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		7BB1AAC623FE1BEE009FD83C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6F5CA667EF6199DC8282977 /* Pods-PediatricPancreas_Storyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas_Storyboard.release.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard.release.xcconfig"; sourceTree = "<group>"; };
 		BA0BC2D07EC9CF4FE884FD9E /* Pods-PediatricPancreas_Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas_Storyboard.debug.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,10 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				759E149B23FE08CC001A2E7A /* CareKitStore.framework in Frameworks */,
-				759E149823FE08C9001A2E7A /* CareKit.framework in Frameworks */,
-				759E149F23FE08D6001A2E7A /* ResearchKit.framework in Frameworks */,
-				759E149D23FE08CF001A2E7A /* CareKitUI.framework in Frameworks */,
 				EBEE648A4B99E88BDBEE7BE3 /* Pods_PediatricPancreas_Storyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,10 +69,6 @@
 		759E145023FE0832001A2E7A = {
 			isa = PBXGroup;
 			children = (
-				759E148D23FE086B001A2E7A /* ResearchKit.xcodeproj */,
-				759E148423FE0862001A2E7A /* CareKitUI.xcodeproj */,
-				759E147B23FE085B001A2E7A /* CareKitStore.xcodeproj */,
-				759E147023FE0856001A2E7A /* CareKit.xcodeproj */,
 				759E145B23FE0832001A2E7A /* PediatricPancreas_Storyboard */,
 				759E145A23FE0832001A2E7A /* Products */,
 				759E149723FE08C9001A2E7A /* Frameworks */,
@@ -180,42 +97,6 @@
 				759E146A23FE0834001A2E7A /* Info.plist */,
 			);
 			path = PediatricPancreas_Storyboard;
-			sourceTree = "<group>";
-		};
-		759E147123FE0856001A2E7A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				759E147823FE0856001A2E7A /* CareKit.framework */,
-				759E147A23FE0856001A2E7A /* CareKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		759E147C23FE085B001A2E7A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				759E148123FE085B001A2E7A /* CareKitStore.framework */,
-				759E148323FE085B001A2E7A /* CareKitStoreTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		759E148523FE0862001A2E7A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				759E148A23FE0862001A2E7A /* CareKitUI.framework */,
-				759E148C23FE0862001A2E7A /* CareKitUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		759E148E23FE086B001A2E7A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				759E149423FE086C001A2E7A /* ResearchKit.framework */,
-				759E149623FE086C001A2E7A /* ResearchKitTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		759E149723FE08C9001A2E7A /* Frameworks */ = {
@@ -275,89 +156,12 @@
 			mainGroup = 759E145023FE0832001A2E7A;
 			productRefGroup = 759E145A23FE0832001A2E7A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 759E147123FE0856001A2E7A /* Products */;
-					ProjectRef = 759E147023FE0856001A2E7A /* CareKit.xcodeproj */;
-				},
-				{
-					ProductGroup = 759E147C23FE085B001A2E7A /* Products */;
-					ProjectRef = 759E147B23FE085B001A2E7A /* CareKitStore.xcodeproj */;
-				},
-				{
-					ProductGroup = 759E148523FE0862001A2E7A /* Products */;
-					ProjectRef = 759E148423FE0862001A2E7A /* CareKitUI.xcodeproj */;
-				},
-				{
-					ProductGroup = 759E148E23FE086B001A2E7A /* Products */;
-					ProjectRef = 759E148D23FE086B001A2E7A /* ResearchKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				759E145823FE0832001A2E7A /* PediatricPancreas_Storyboard */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		759E147823FE0856001A2E7A /* CareKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CareKit.framework;
-			remoteRef = 759E147723FE0856001A2E7A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		759E147A23FE0856001A2E7A /* CareKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CareKitTests.xctest;
-			remoteRef = 759E147923FE0856001A2E7A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		759E148123FE085B001A2E7A /* CareKitStore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CareKitStore.framework;
-			remoteRef = 759E148023FE085B001A2E7A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		759E148323FE085B001A2E7A /* CareKitStoreTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CareKitStoreTests.xctest;
-			remoteRef = 759E148223FE085B001A2E7A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		759E148A23FE0862001A2E7A /* CareKitUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CareKitUI.framework;
-			remoteRef = 759E148923FE0862001A2E7A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		759E148C23FE0862001A2E7A /* CareKitUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CareKitUITests.xctest;
-			remoteRef = 759E148B23FE0862001A2E7A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		759E149423FE086C001A2E7A /* ResearchKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ResearchKit.framework;
-			remoteRef = 759E149323FE086C001A2E7A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		759E149623FE086C001A2E7A /* ResearchKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ResearchKitTests.xctest;
-			remoteRef = 759E149523FE086C001A2E7A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		759E145723FE0832001A2E7A /* Resources */ = {

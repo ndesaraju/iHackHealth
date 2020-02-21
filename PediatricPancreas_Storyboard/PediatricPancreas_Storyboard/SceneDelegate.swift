@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import ResearchKit
-import CareKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
