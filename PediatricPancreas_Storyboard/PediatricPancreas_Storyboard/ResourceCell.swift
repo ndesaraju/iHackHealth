@@ -13,7 +13,7 @@ class ResourceCell: UITableViewCell {
     @IBOutlet weak var resourceName: UILabel!
     
     func setResource(resource: Resource) {
-        resourceName.text = resource.labelName
+        resourceName.text = resource.getName()
     }
     
 }
