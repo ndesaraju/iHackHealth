@@ -1,6 +1,10 @@
 ${PODS_ROOT}/Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework
 ${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
+${PODS_ROOT}/PSPDFKit/PSPDFKit.framework
+${PODS_ROOT}/PSPDFKit/PSPDFKit.framework.dSYM
+${PODS_ROOT}/PSPDFKit/PSPDFKitUI.framework
+${PODS_ROOT}/PSPDFKit/PSPDFKitUI.framework.dSYM
 ${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
 ${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework
 ${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework
