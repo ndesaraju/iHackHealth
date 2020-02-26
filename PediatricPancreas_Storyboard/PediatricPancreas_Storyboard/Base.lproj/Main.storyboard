@@ -65,11 +65,62 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="pdj-oZ-BrD" id="MSi-JX-lgl"/>
+                        <segue destination="Upn-Uv-903" kind="show" identifier="InnerResourceSegue" id="uhz-ht-YDt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Sub Resource View Controller-->
+        <scene sceneID="7qV-nR-fxw">
+            <objects>
+                <viewController id="Upn-Uv-903" customClass="SubResourceViewController" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFK-Qj-EIk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yDv-Vr-rHV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tkq-Dr-QDZ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tkq-Dr-QDZ" id="bdw-D5-gkQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-4Y-wc6">
+                                                    <rect key="frame" x="186" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XLI-4Y-wc6" firstAttribute="centerY" secondItem="bdw-D5-gkQ" secondAttribute="centerY" id="9je-Ra-NSI"/>
+                                                <constraint firstItem="XLI-4Y-wc6" firstAttribute="centerX" secondItem="bdw-D5-gkQ" secondAttribute="centerX" id="lm8-Nn-SNI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yDv-Vr-rHV" firstAttribute="leading" secondItem="ezj-8R-R4w" secondAttribute="leading" id="JLL-tX-Cxp"/>
+                            <constraint firstItem="yDv-Vr-rHV" firstAttribute="top" secondItem="ezj-8R-R4w" secondAttribute="top" id="OiA-H1-yup"/>
+                            <constraint firstItem="ezj-8R-R4w" firstAttribute="bottom" secondItem="yDv-Vr-rHV" secondAttribute="bottom" id="bUL-qC-8qB"/>
+                            <constraint firstItem="ezj-8R-R4w" firstAttribute="trailing" secondItem="yDv-Vr-rHV" secondAttribute="trailing" id="r6C-CU-nj5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ezj-8R-R4w"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N6D-0s-Ubn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tR3-vc-l5W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2009" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Rk-yr-C4c">

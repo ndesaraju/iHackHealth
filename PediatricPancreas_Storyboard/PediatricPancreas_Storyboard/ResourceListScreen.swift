@@ -48,6 +48,7 @@ class ResourceListScreen: UIViewController {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "InnerResourceSegue", sender: self)
     }
     
 }
