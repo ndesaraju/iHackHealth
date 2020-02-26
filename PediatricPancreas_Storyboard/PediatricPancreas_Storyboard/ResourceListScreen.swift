@@ -36,14 +36,20 @@ class ResourceListScreen: UIViewController {
         
         var tempResources: [Resource] = []
         
-        let resource1 = Folder("Acute Pancreatitis", [], [], ["tag", "tag2"], [])
-        let resource2 = Folder("Chronic Pancreatitis", [], [], ["tAg3", "taG"], [])
+        let resource1 = Folder(name: "Acute Pancreatitis", subfolders: [], files: [], tags: ["tag", "tag2"], parents: [])
+        let resource2 = Folder(name: "Chronic Pancreatitis", subfolders: [], files: [], tags: ["tAg3", "taG"], parents: [])
         
         tempResources.append(resource1)
         tempResources.append(resource2)
         
         return tempResources
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }
 
 extension ResourceListScreen: UITableViewDataSource, UITableViewDelegate {
