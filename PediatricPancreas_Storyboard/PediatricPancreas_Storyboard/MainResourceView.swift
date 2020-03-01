@@ -60,19 +60,19 @@ class MainResourceView: UIViewController {
         let res3 = Folder(name: "Diabetes", subfolders: [], files: [
         ], tags: [], parents: []);
         let res4 = Folder(name: "Helpful Contacts", subfolders: [], files: [
-            File(name: "Helful Numbers.pdf", path: "Helpful Numbers.pdf")
+            File(name: "Helpful Numbers.pdf", path: "Helpful Numbers.pdf")
         ], tags: [], parents: []);
         let res5 = Folder(name: "Lab Tests", subfolders: [], files: [
-            File(name: "Oral Glucose Tolerance Test (OGTT).pdf", path: "Oral Glucose Tolerance Test (OGTT).pdf"),
-            File(name: "Pancreas Genetic testing.pdf", path: "Pancreas Genetic testing.pdf"),
-            File(name: "Stool pancreas elastase.pdf", path: "Stool pancreas elastase.pdf"),
-            File(name: "Sweat chloride test.pdf", path: "Sweat chloride test")
+            File(name: "Oral Glucose Tolerance Test (OGTT).pdf", path: "Testing/Oral Glucose Tolerance Test (OGTT).pdf"),
+            File(name: "Pancreatitis Genetic testing.pdf", path: "Testing/Pancreatitis Genetic testing.pdf"),
+            File(name: "Stool pancreatic elastase.pdf", path: "Testing/Stool pancreatic elastase.pdf"),
+            File(name: "Sweat chloride test.pdf", path: "Testing/Sweat chloride test.pdf")
         ], tags: [], parents: []);
         let res6 = Folder(name: "Pancreatitis", subfolders: [], files: [
             File(name: "Acute Pancreatitis.pdf", path: "Acute Pancreatitis.pdf"),
             File(name: "Chronic pancreatitis.pdf", path: "Chronic pancreatitis.pdf"),
             File(name: "EPI info sheet.pdf", path: "EPI info sheet.pdf"),
-            File(name: "Online resources handout.pdf", path: "Online resources handout.pdf"),
+            File(name: "Online resources handout .pdf", path: "Online resources handout .pdf"),
             File(name: "Pain management and pancreatitis.pdf", path: "Pain management and pancreatitis.pdf"),
             File(name: "Pancreas divisum handout.pdf", path: "Pancreas divisum handout.pdf"),
             File(name: "Pancreatic Enzyme Medication.pdf", path: "Pancreatic Enzyme Medication.pdf"),
