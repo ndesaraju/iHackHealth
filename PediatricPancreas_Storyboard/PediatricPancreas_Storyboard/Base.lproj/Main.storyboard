@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IAa-Nh-06E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SEn-V0-bqb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -70,12 +70,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+            <point key="canvasLocation" x="833" y="139"/>
         </scene>
-        <!--Sub Resource View Controller-->
+        <!--Inner Resources-->
         <scene sceneID="7qV-nR-fxw">
             <objects>
-                <viewController id="Upn-Uv-903" customClass="SubResourceViewController" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Upn-Uv-903" customClass="InnerResourceListScreen" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFK-Qj-EIk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tkq-Dr-QDZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InnerResourceCell" id="tkq-Dr-QDZ" customClass="ResourceCell" customModule="PediatricPancreas_Storyboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tkq-Dr-QDZ" id="bdw-D5-gkQ">
@@ -103,8 +103,15 @@
                                                 <constraint firstItem="XLI-4Y-wc6" firstAttribute="centerX" secondItem="bdw-D5-gkQ" secondAttribute="centerX" id="lm8-Nn-SNI"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="resourceName" destination="XLI-4Y-wc6" id="97M-8B-rg5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Upn-Uv-903" id="mno-0z-taC"/>
+                                    <outlet property="delegate" destination="Upn-Uv-903" id="4Zt-6s-a6b"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -116,11 +123,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ezj-8R-R4w"/>
                     </view>
-                    <navigationItem key="navigationItem" id="N6D-0s-Ubn"/>
+                    <navigationItem key="navigationItem" title="Inner Resources" id="N6D-0s-Ubn"/>
+                    <connections>
+                        <segue destination="IAa-Nh-06E" kind="show" identifier="PDFViewResourceSegue" destinationCreationSelector="pdfsegue" id="rX3-0N-RHa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tR3-vc-l5W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2009" y="139"/>
+            <point key="canvasLocation" x="1543" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Rk-yr-C4c">
@@ -157,13 +167,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cOp-Ek-9a6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Rqg-OY-cxX"/>
                     <connections>
                         <outlet property="pdfView" destination="o2q-db-Hvm" id="lEq-aO-xDy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8CI-I1-iXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2008.6956521739132" y="783.48214285714278"/>
+            <point key="canvasLocation" x="2320" y="139"/>
         </scene>
     </scenes>
 </document>

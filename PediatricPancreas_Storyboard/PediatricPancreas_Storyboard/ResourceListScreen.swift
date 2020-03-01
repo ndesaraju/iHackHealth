@@ -10,9 +10,15 @@ import UIKit
 
 class ResourceListScreen: UIViewController {
     
-    
+    /**
+     Tableview outlet
+     */
     @IBOutlet weak var tableView: UITableView!
     
+    /**
+     Variables
+     */
+    var selection = Folder(name: "", subfolders: [], files: [], tags: ["", ""], parents: [])
     var resources: [Resource] = []
     var allFiles = [Resource]()
     var filteredFiles = [Resource]()
@@ -23,6 +29,9 @@ class ResourceListScreen: UIViewController {
         super.viewDidLoad()
         resources = createArray()
         
+        /**
+         Search
+         */
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -36,8 +45,32 @@ class ResourceListScreen: UIViewController {
         
         var tempResources: [Resource] = []
         
-        let resource1 = Folder(name: "Acute Pancreatitis", subfolders: [], files: [], tags: ["tag", "tag2"], parents: [])
-        let resource2 = Folder(name: "Chronic Pancreatitis", subfolders: [], files: [], tags: ["tAg3", "taG"], parents: [])
+        let resource1 = Folder(name: "Acute Pancreatitis",
+                               subfolders: [
+                                Folder(name: "Test",
+                                       subfolders: [],
+                                       files: [],
+                                       tags: ["tag1","tag2"],
+                                       parents: []),
+                                Folder(name: "Test2",
+                                       subfolders: [],
+                                       files: [],
+                                       tags: [],
+                                       parents: [])],
+                               files: [],
+                               tags: ["tag", "tag2"],
+                               parents: [])
+        let resource2 = Folder(name: "Chronic Pancreatitis", subfolders: [
+        Folder(name: "Testy",
+               subfolders: [],
+               files: [],
+               tags: ["tag1","tag2"],
+               parents: []),
+        Folder(name: "Test4",
+               subfolders: [],
+               files: [],
+               tags: [],
+               parents: [])], files: [], tags: ["tAg3", "taG"], parents: [])
         
         tempResources.append(resource1)
         tempResources.append(resource2)
@@ -48,7 +81,14 @@ class ResourceListScreen: UIViewController {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        selection = resources[indexPath.row] as! Folder
         performSegue(withIdentifier: "InnerResourceSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! InnerResourceListScreen
+        vc.selection = self.selection
+        
     }
     
 }
@@ -68,6 +108,9 @@ extension ResourceListScreen: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+/**
+ Search functionality implemented here.
+ */
 extension ResourceListScreen: UISearchResultsUpdating {
     
     /** Sets filteredList to be the files matching SEARCHTEXT and returns the number of valid files */

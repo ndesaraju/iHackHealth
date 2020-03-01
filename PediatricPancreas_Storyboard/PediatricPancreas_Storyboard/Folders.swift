@@ -95,6 +95,13 @@ class Folder: Resource {
         throw folderError.nonexistentFolder(message: "There is no subfolder with this name. Stop.")
     }
     
+    /**
+     Returns subfolders of this folder.
+     */
+    func getSubfolders() -> [Folder] {
+        return self._subfolders
+    }
+    
     func addFile(file: File) {
         _files.append(file)
     }
