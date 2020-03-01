@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Resources-->
+        <!--Diseases-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ResourceListScreen" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainResourceView" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Resources" id="kf2-7S-95X">
+                    <navigationItem key="navigationItem" title="Diseases" id="kf2-7S-95X">
                         <barButtonItem key="backBarButtonItem" title="Back" id="3Zh-Sh-0P3"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="833" y="139"/>
         </scene>
-        <!--Inner Resources-->
+        <!--Further Information-->
         <scene sceneID="7qV-nR-fxw">
             <objects>
-                <viewController id="Upn-Uv-903" customClass="InnerResourceListScreen" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Upn-Uv-903" customClass="InnerResourceView" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFK-Qj-EIk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ezj-8R-R4w"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Inner Resources" id="N6D-0s-Ubn"/>
+                    <navigationItem key="navigationItem" title="Further Information" id="N6D-0s-Ubn"/>
                     <connections>
                         <segue destination="IAa-Nh-06E" kind="show" identifier="PDFViewResourceSegue" destinationCreationSelector="pdfsegue" id="rX3-0N-RHa"/>
                     </connections>
@@ -153,7 +153,7 @@
         <!--View Controller-->
         <scene sceneID="yJ1-7C-QNB">
             <objects>
-                <viewController id="IAa-Nh-06E" customClass="ViewController" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IAa-Nh-06E" customClass="PDFViewController" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qig-PO-z8M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

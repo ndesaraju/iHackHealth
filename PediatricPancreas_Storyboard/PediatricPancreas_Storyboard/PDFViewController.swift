@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PDFViewController.swift
 //  PediatricPancreas_Storyboard
 //
 //  Created by Reet Mishra on 2/19/20.
@@ -10,9 +10,14 @@ import UIKit
 import Firebase
 import PDFKit
 
-class ViewController: UIViewController {
+class PDFViewController: UIViewController {
     
     @IBOutlet weak var pdfView: PDFView!
+    
+    // Information from previous view controller.
+    // Please find a way to display this file.
+    var fileSelection = File(name: "", path: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

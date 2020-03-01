@@ -3,33 +3,38 @@
 //  PediatricPancreas_Storyboard
 //
 //  Created by Taewon Kim on 3/1/20.
-//  Copyright © 2020 Example Company. All rights reserved.
+//  Copyright © 2020 Taewon Kim. All rights reserved.
 //
 
 import UIKit
 
-class InnerResourceListScreen: UIViewController {
+class InnerResourceView: UIViewController {
     
     /**
-     Tableview outlet
+     Outlets
      */
     @IBOutlet weak var tableView: UITableView!
     
     /**
      Variables
      */
-    var selection = Folder(name: "", subfolders: [], files: [], tags: ["", ""], parents: [])
-    var resources: [Resource] = []
+    var folderSelection = Folder(name: "", subfolders: [], files: [], tags: ["", ""], parents: []); // the current selected folder
+    var fileSelection = File(name: "", path: ""); // the file to be selected
+    var resources: [Resource] = []; // the array of files to be displayed on the screen
+    
     var allFiles = [Resource]()
     var filteredFiles = [Resource]()
     
     var searchController: UISearchController!
     
+    /**
+     Loads the view.
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
-        resources = selection.getSubfolders()
+        resources = folderSelection.getFiles()
         
-        // Search feature.
+        // search features
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -39,28 +44,41 @@ class InnerResourceListScreen: UIViewController {
         
     }
     
-//    func createArray() -> [Resource] {
-//        
-//        var tempResources: [Resource] = []
-//        
-//        
-//        let resource1 = Folder(name: "What to do", subfolders: [], files: [], tags: ["Tag1", "Tag4"], parents: [])
-//        let resource2 = Folder(name: "How to do", subfolders: [], files: [], tags: ["Tag2", "Tag3"], parents: [])
-//        
-//        tempResources.append(resource1)
-//        tempResources.append(resource2)
-//        
-//        return tempResources
-//    }
-    
+    /**
+     A method that will be run once the user selects a row (a file).
+     */
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // implement select/deselect animation
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        // the file that was selected
+        self.fileSelection = resources[indexPath.row] as! File
+        
+        // performs a segue to the next view
         performSegue(withIdentifier: "PDFViewResourceSegue", sender: self)
+        
+    }
+    
+    /**
+     This method is called right before performing a segue, passing along information from the current view.
+     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // cast the segue destination
+        let vc = segue.destination as! PDFViewController
+        
+        // pass the current file selection to the next view
+        vc.fileSelection = self.fileSelection
     }
     
 }
 
-extension InnerResourceListScreen: UITableViewDataSource, UITableViewDelegate {
+/**
+DIsplays the current files for this view.
+*/
+extension InnerResourceView: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return resources.count
     }
@@ -73,12 +91,13 @@ extension InnerResourceListScreen: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
 }
 
 /**
- Search Functionality
+ Search functionality should be implemented here.
  */
-extension InnerResourceListScreen: UISearchResultsUpdating {
+extension InnerResourceView: UISearchResultsUpdating {
     
     /** Sets filteredList to be the files matching SEARCHTEXT and returns the number of valid files */
     private func filterFiles(for searchText: String) -> Int {
