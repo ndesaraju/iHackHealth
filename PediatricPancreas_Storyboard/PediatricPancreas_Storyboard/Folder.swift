@@ -95,10 +95,24 @@ class Folder: Resource {
         throw folderError.nonexistentFolder(message: "There is no subfolder with this name. Stop.")
     }
     
+    /**
+     Returns all subfolders of this folder.
+     */
+    func getSubfolders() -> [Folder] {
+        return self._subfolders
+    }
+    
+    
+    /**
+     Adds a file FILE to this folder.
+     */
     func addFile(file: File) {
         _files.append(file)
     }
     
+    /**
+     Returns a file with FILENAME that is within this folder.
+     */
     func getFile(fileName: String) throws -> File {
         for file in _files {
             if file.getName() == fileName {
@@ -107,6 +121,14 @@ class Folder: Resource {
         }
         throw fileError.nonexistentFile(message: "No such file exists. Stop.")
     }
+    
+    /**
+     Returns all files within a folder.
+     */
+    func getFiles() -> [File] {
+        return self._files
+    }
+    
 }
 
 enum folderError:

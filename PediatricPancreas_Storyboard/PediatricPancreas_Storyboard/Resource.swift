@@ -9,12 +9,15 @@
 import Foundation
 
 protocol Resource {
+    
     var _tags: [String] { get }
     
     /** Returns index of specified tag, or -1 if tag does not exist. */
     func hasTag(tag: String) -> Int
+    
     /** Returns the name of the file or folder. */
     func getName() -> String
+    
     /** Returns a list of all the tags of the file or folder */
     func getTags() -> [String]
 }
