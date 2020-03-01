@@ -110,12 +110,12 @@
 				4A2D64E6240BDCAA0018BD41 /* InnerResourceView.swift */,
 				759E146023FE0832001A2E7A /* PDFViewController.swift */,
 				4AD625AF24067D460003E88A /* Main.storyboard */,
+				759E146723FE0834001A2E7A /* LaunchScreen.storyboard */,
 				759E145C23FE0832001A2E7A /* AppDelegate.swift */,
 				759E145E23FE0832001A2E7A /* SceneDelegate.swift */,
-				759E146723FE0834001A2E7A /* LaunchScreen.storyboard */,
-				7BB1AAC623FE1BEE009FD83C /* GoogleService-Info.plist */,
-				759E146A23FE0834001A2E7A /* Info.plist */,
 				7BE203F3240BB1EE00DF1A45 /* Utils.swift */,
+				759E146A23FE0834001A2E7A /* Info.plist */,
+				7BB1AAC623FE1BEE009FD83C /* GoogleService-Info.plist */,
 			);
 			path = PediatricPancreas_Storyboard;
 			sourceTree = "<group>";

@@ -16,7 +16,7 @@ class PDFViewController: UIViewController {
     
     // Information from previous view controller.
     // Please find a way to display this file.
-    var fileSelection = File(name: "", path: "")
+    var fileSelection = File(name: "", path: "");
     
     override func viewDidLoad() {
         super.viewDidLoad()

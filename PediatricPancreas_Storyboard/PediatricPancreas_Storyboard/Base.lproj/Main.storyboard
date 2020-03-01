@@ -70,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="833" y="139"/>
+            <point key="canvasLocation" x="861" y="139"/>
         </scene>
         <!--Further Information-->
         <scene sceneID="7qV-nR-fxw">
@@ -125,12 +125,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Further Information" id="N6D-0s-Ubn"/>
                     <connections>
-                        <segue destination="IAa-Nh-06E" kind="show" identifier="PDFViewResourceSegue" destinationCreationSelector="pdfsegue" id="rX3-0N-RHa"/>
+                        <segue destination="IAa-Nh-06E" kind="show" identifier="PDFViewSegue" id="rX3-0N-RHa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tR3-vc-l5W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1543" y="139"/>
+            <point key="canvasLocation" x="1588" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Rk-yr-C4c">
@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8CI-I1-iXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2320" y="139"/>
+            <point key="canvasLocation" x="2341" y="139"/>
         </scene>
     </scenes>
 </document>

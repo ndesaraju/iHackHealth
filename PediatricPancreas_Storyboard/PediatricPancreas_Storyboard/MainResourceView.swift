@@ -19,7 +19,7 @@ class MainResourceView: UIViewController {
      Variables
      */
     var folderSelection = Folder(name: "", subfolders: [], files: [], tags: ["", ""], parents: []); // the folder to be selected
-    var resources: [Resource] = []; // the array of folders to be displayed on the screen
+    var folderArray: [Resource] = []; // the array of folders to be displayed on the screen
     
     var allFiles = [Resource](); // not sure what you need this for, but sure
     var filteredFiles = [Resource](); // not sure what you need this for, but sure
@@ -31,7 +31,7 @@ class MainResourceView: UIViewController {
      */
     override func viewDidLoad() {
         super.viewDidLoad();
-        resources = createArray();
+        folderArray = createArray();
         
         // search features
         searchController = UISearchController(searchResultsController: nil);
@@ -78,7 +78,7 @@ class MainResourceView: UIViewController {
         tableView.deselectRow(at: indexPath, animated: true);
         
         // the folder that was selected
-        folderSelection = resources[indexPath.row] as! Folder;
+        self.folderSelection = folderArray[indexPath.row] as! Folder;
         
         // performs a segue to the next view
         performSegue(withIdentifier: "InnerResourceSegue", sender: self);
@@ -106,11 +106,11 @@ DIsplays the current folders for this view.
 extension MainResourceView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return resources.count;
+        return folderArray.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let resource = resources[indexPath.row];
+        let resource = folderArray[indexPath.row];
         let cell = tableView.dequeueReusableCell(withIdentifier: "ResourceCell") as! ResourceCell;
         cell.setResource(resource: resource);
         return cell;
