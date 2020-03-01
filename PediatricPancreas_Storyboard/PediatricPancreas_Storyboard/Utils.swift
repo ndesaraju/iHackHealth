@@ -12,24 +12,21 @@ import FirebaseDatabase
 
 class Utils{
 
-    static func getDownloadURL(storage : StorageReference, path : String) -> URL{
-        let file = storage.child(path)
-        
-        var destination : [String] = []
-        
-        file.downloadURL{(url, error) in
-            if error == nil{
-                destination.append(url!.absoluteString)
-                return
-            } else {
-                print(error?.localizedDescription as Any)
-                return
-            }
-            
-        }
-        let url = URL.init(fileURLWithPath: destination[0])
-        return url
-    }
+//    static func getDownloadURL(storage : StorageReference, path : String) -> URL{
+//        let file = storage.child(path)
+//        
+//        var destination : [String] = []
+//        
+//        file.downloadURL{ url, error in
+//            print(error)
+//            print(url)
+//            print("fuck")
+//            destination.append(url!.absoluteString)
+//            return
+//        }
+//        let url = URL.init(fileURLWithPath: destination[0])
+//        return url
+//    }
 
     static func loadFileSync(url: URL, completion: @escaping (String?, Error?) -> Void){
         let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
