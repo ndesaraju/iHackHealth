@@ -10,6 +10,5 @@ target 'PediatricPancreas_Storyboard' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-  pod 'PSPDFKit', podspec: 'https://customers.pspdfkit.com/cocoapods/TRIAL-ydBek_93rV-QYfEC_opiqLkbbUgRaNEpVdZA73Qalp3c7D1b1rvQ6Dm-jqdE4sR1ezgQGno43b4l5Iq8m-0e8rzl2bx4w9cVOpgUOk17kmg/latest.podspec'
-  
+    
 end

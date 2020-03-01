@@ -2732,15 +2732,6 @@ More information at <a href="http://landonf.org/2009/02/index.html">Landon
 Fuller's blog</a>
 
 
-## PSPDFKit
-
-All items and source code Copyright © 2010-2020 PSPDFKit GmbH.
-
-PSPDFKit is a commercial product and requires a license to be used.
-
-See License-Evaluation.pdf if you are evaluating the demo.
-
-
 ## PromisesObjC
 
 

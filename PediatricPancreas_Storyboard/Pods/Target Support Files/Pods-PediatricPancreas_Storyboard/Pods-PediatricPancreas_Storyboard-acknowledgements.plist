@@ -2835,21 +2835,6 @@ Fuller's blog&lt;/a&gt;
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>All items and source code Copyright © 2010-2020 PSPDFKit GmbH.
-
-PSPDFKit is a commercial product and requires a license to be used.
-
-See License-Evaluation.pdf if you are evaluating the demo.
-</string>
-			<key>License</key>
-			<string>Commercial</string>
-			<key>Title</key>
-			<string>PSPDFKit</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
 			<string>
                                  Apache License
                            Version 2.0, January 2004

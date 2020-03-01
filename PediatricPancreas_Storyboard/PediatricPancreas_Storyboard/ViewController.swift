@@ -11,27 +11,24 @@ import FirebaseDatabase
 import FirebaseStorage
 
 class ViewController: UIViewController {
-    @IBOutlet weak var imageViewer: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //let ref = Database.database().reference()
         let storage =  Storage.storage().reference()
-        let tempImageRef = storage.child("test/img1.jpg")
-        
-        tempImageRef.getData(maxSize: 1*1000*1000) { (data, error) in
-            if error == nil{
-                print(data)
-                
-                self.imageViewer.image = UIImage(data: data!)
-                
-            }else{
-                print(error?.localizedDescription)
-            }
-        }
-        
+        let path = "test/file1.pdf"
+        let downloadURL = Utils.getDownloadURL(storage: storage, path: path)
+        let fileURL = Utils.getFileURL(downloadURL:downloadURL)
+               
+        //not working: causes program to crash
+//        if let pdfDocument = PDFDocument(url: fileURL){
+//            pdfView.autoScales = true
+//            pdfView.displayMode = .singlePageContinuous
+//            pdfView.displayDirection = .vertical
+//            pdfView.document = pdfDocument
+//        }
+
         
     }
 

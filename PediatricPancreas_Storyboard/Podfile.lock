@@ -85,15 +85,11 @@ PODS:
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.8)
-  - PSPDFKit (9.2.2):
-    - PSPDFKit/Core (= 9.2.2)
-  - PSPDFKit/Core (9.2.2)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
-  - PSPDFKit (from `https://customers.pspdfkit.com/cocoapods/TRIAL-ydBek_93rV-QYfEC_opiqLkbbUgRaNEpVdZA73Qalp3c7D1b1rvQ6Dm-jqdE4sR1ezgQGno43b4l5Iq8m-0e8rzl2bx4w9cVOpgUOk17kmg/latest.podspec`)
 
 SPEC REPOS:
   trunk:
@@ -116,10 +112,6 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
 
-EXTERNAL SOURCES:
-  PSPDFKit:
-    :podspec: https://customers.pspdfkit.com/cocoapods/TRIAL-ydBek_93rV-QYfEC_opiqLkbbUgRaNEpVdZA73Qalp3c7D1b1rvQ6Dm-jqdE4sR1ezgQGno43b4l5Iq8m-0e8rzl2bx4w9cVOpgUOk17kmg/latest.podspec
-
 SPEC CHECKSUMS:
   Firebase: 2672e5636b42f977177716317e68346ae5e9de25
   FirebaseAnalytics: cf95d3aab897612783020fbd98401d5366f135ee
@@ -139,8 +131,7 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
-  PSPDFKit: 5b0010f0f7fd49c8a23dc6c8c72406b6c16e9dd8
 
-PODFILE CHECKSUM: 60dfd4e81750b17fcdb246755fe1aabc2eb50ca7
+PODFILE CHECKSUM: 2b8aab10dc2ed1c09c0e116f72abd31d827654b1
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.8.4
