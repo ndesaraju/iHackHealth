@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import FirebaseDatabase
-import FirebaseStorage
+import Firebase
 import PDFKit
 
 class ViewController: UIViewController {
@@ -17,9 +16,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let fileNames : [String] = ["Oral Glucose Tolerance Test", "Pancreatitis Genetic Testing", "Stool Prancreatic Elastase", "Sweat Chloride Test"]
+        
+        let filePaths : [String] = ["Testing/Oral Glucose Tolerance Test (OGTT).pdf", "Testing/Pancreatitis Genetic testing.pdf", "Stool pancreatic elastase.pdf", "Sweat chloride test.pdf"]
+        
+        for index in 0..<fileNames.count {
+            File.init(name: fileNames[index], path: filePaths[index])
+        }
         
         let storage = Storage.storage().reference()
-        let path = "test/file1.pdf"
+        let path = File.allFiles[0].getPath()
         print(storage.bucket)
         let file = storage.child(path)
         file.downloadURL{ url, error in
