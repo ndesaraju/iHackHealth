@@ -44,6 +44,13 @@ class Folder: Resource {
         }
     }
     
+    init() {
+        self._name = ""
+        self._subfolders = []
+        self._tags = []
+        self._files = []
+    }
+    
     /** Returns the name of the folder. */
     func getName() -> String {
         return self._name

@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Diseases-->
+        <!--Resources-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainResourceView" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Diseases" id="kf2-7S-95X">
+                    <navigationItem key="navigationItem" title="Resources" id="kf2-7S-95X">
                         <barButtonItem key="backBarButtonItem" title="Back" id="3Zh-Sh-0P3"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -168,7 +168,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ezj-8R-R4w"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Further Information" id="N6D-0s-Ubn"/>
+                    <navigationItem key="navigationItem" title="Information" id="N6D-0s-Ubn"/>
                     <connections>
                         <segue destination="IAa-Nh-06E" kind="show" identifier="PDFViewSegue" id="rX3-0N-RHa"/>
                     </connections>

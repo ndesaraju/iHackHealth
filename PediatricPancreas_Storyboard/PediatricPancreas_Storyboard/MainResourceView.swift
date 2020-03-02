@@ -60,19 +60,59 @@ class MainResourceView: UIViewController {
         var tempResources: [Resource] = []; // a temporary array
         
         // test folders
-        let testRes1 = Folder(name: "Acute Pancreatitis",
-                               subfolders: [],
-                               files: [File(name: "Test.pdf", path: "")],
-                               tags: ["tag", "tag2"],
-                               parents: []);
-        let testRes2 = Folder(name: "Chronic Pancreatitis",
-                               subfolders: [],
-                               files: [File(name: "Test2.pdf", path: "")],
-                               tags: ["tAg3", "taG"],
-                               parents: []);
+        let res1 = Folder(name: "About Us", subfolders: [], files: [
+            File(name: "Refer a patient.pdf", path: "Refer a patient.pdf")
+        ], tags: ["tag", "tag2"], parents: []);
+        let res2 = Folder(name: "Congenital Hyperinsulinism", subfolders: [], files: [
+            File(name: "Hyperinsulinism info sheet.pdf", path: "Hyperinsulinism info sheet.pdf")
+        ], tags: ["tAg3", "taG"], parents: []);
+        let res3 = Folder(name: "Diabetes", subfolders: [], files: [
+        ], tags: [], parents: []);
+        let res4 = Folder(name: "Helpful Contacts", subfolders: [], files: [
+            File(name: "Helpful Numbers.pdf", path: "Helpful Numbers.pdf")
+        ], tags: [], parents: []);
+        let res5 = Folder(name: "Lab Tests", subfolders: [], files: [
+            File(name: "Oral Glucose Tolerance Test (OGTT).pdf", path: "Testing/Oral Glucose Tolerance Test (OGTT).pdf"),
+            File(name: "Pancreatitis Genetic testing.pdf", path: "Testing/Pancreatitis Genetic testing.pdf"),
+            File(name: "Stool pancreatic elastase.pdf", path: "Testing/Stool pancreatic elastase.pdf"),
+            File(name: "Sweat chloride test.pdf", path: "Testing/Sweat chloride test.pdf")
+        ], tags: [], parents: []);
+        let res6 = Folder(name: "Pancreatitis", subfolders: [], files: [
+            File(name: "Acute Pancreatitis.pdf", path: "Acute Pancreatitis.pdf"),
+            File(name: "Chronic pancreatitis.pdf", path: "Chronic pancreatitis.pdf"),
+            File(name: "EPI info sheet.pdf", path: "EPI info sheet.pdf"),
+            File(name: "Online resources handout .pdf", path: "Online resources handout .pdf"),
+            File(name: "Pain management and pancreatitis.pdf", path: "Pain management and pancreatitis.pdf"),
+            File(name: "Pancreas divisum handout.pdf", path: "Pancreas divisum handout.pdf"),
+            File(name: "Pancreatic Enzyme Medication.pdf", path: "Pancreatic Enzyme Medication.pdf"),
+            File(name: "Pancreatitis and Nutrition.pdf", path: "Pancreatitis and Nutrition.pdf"),
+            File(name: "Pancreatitis monitoring.pdf", path: "Pancreatitis monitoring.pdf")
+        ], tags: [], parents: []);
+        let res7 = Folder(name: "Procedures", subfolders: [], files: [
+            File(name: "Colonoscopy.pdf", path: "Colonoscopy.pdf"),
+            File(name: "EGD info sheet.pdf", path: "EGD info sheet.pdf"),
+            File(name: "ERCP info sheet.pdf", path: "ERCP info sheet.pdf"),
+            File(name: "Gastric Emptying Study.pdf", path: "Gastric Emptying Study.pdf"),
+            File(name: "MRCP info sheet.pdf", path: "MRCP info sheet.pdf"),
+            File(name: "MRE info sheet.pdf", path: "MRE info sheet.pdf"),
+            File(name: "Upper GI.pdf", path: "Upper GI.pdf")
+        ], tags: [], parents: []);
+        let res8 = Folder(name: "School", subfolders: [], files: [
+            ], tags: [], parents: []);
+        let res9 = Folder(name: "TPIAT", subfolders: [], files: [
+            File(name: "Pediatric TPIAT Brief overview.pdf", path: "Pediatric TPIAT Brief overview.pdf"),
+            File(name: "TPIAT eval checklist.pdf", path: "TPIAT eval checklist.pdf")
+        ], tags: [], parents: []);
         
-        tempResources.append(testRes1)
-        tempResources.append(testRes2)
+        tempResources.append(res1)
+        tempResources.append(res2)
+        tempResources.append(res3)
+        tempResources.append(res4)
+        tempResources.append(res5)
+        tempResources.append(res6)
+        tempResources.append(res7)
+        tempResources.append(res8)
+        tempResources.append(res9)
         
         return tempResources
         

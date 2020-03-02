@@ -27,6 +27,11 @@ class File: Resource {
         File.allFiles.append(self)
     }
     
+    init() {
+        _name = "";
+        _path = "";
+    }
+    
     func getName() -> String {
         return _name
     }
