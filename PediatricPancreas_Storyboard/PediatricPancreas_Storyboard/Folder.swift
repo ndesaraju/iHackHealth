@@ -16,6 +16,13 @@ class Folder: Resource {
     private var _files: [File] = []
     internal var _tags: [String] = [] //listed in order of importance
     
+    init() {
+        self._name = ""
+        self._subfolders = []
+        self._tags = []
+        self._files = []
+    }
+    
     /** Initializes a folder with name, list of subfolders, and tags.
         Add this folder to the list of all folders.
         Places self in the subfolders of other folders if needed. */

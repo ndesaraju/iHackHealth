@@ -21,6 +21,7 @@
 		7BE203F4240BB1EE00DF1A45 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE203F3240BB1EE00DF1A45 /* Utils.swift */; };
 		C3FB0DA9240686B3006D0EB3 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB0DA6240686B3006D0EB3 /* Folder.swift */; };
 		C3FB0DAB240686B3006D0EB3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB0DA8240686B3006D0EB3 /* File.swift */; };
+		C3FB0DC3240C54BA006D0EB3 /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FB0DC2240C54BA006D0EB3 /* ResultsTableController.swift */; };
 		EBEE648A4B99E88BDBEE7BE3 /* Pods_PediatricPancreas_Storyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223A3D0F2FAB24511D190436 /* Pods_PediatricPancreas_Storyboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		BA0BC2D07EC9CF4FE884FD9E /* Pods-PediatricPancreas_Storyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PediatricPancreas_Storyboard.debug.xcconfig"; path = "Target Support Files/Pods-PediatricPancreas_Storyboard/Pods-PediatricPancreas_Storyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		C3FB0DA6240686B3006D0EB3 /* Folder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		C3FB0DA8240686B3006D0EB3 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C3FB0DC2240C54BA006D0EB3 /* ResultsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				4AD625AA240672720003E88A /* MainResourceView.swift */,
 				4A2D64E6240BDCAA0018BD41 /* InnerResourceView.swift */,
 				759E146023FE0832001A2E7A /* PDFViewController.swift */,
+				C3FB0DC2240C54BA006D0EB3 /* ResultsTableController.swift */,
 				4AD625AF24067D460003E88A /* Main.storyboard */,
 				759E146723FE0834001A2E7A /* LaunchScreen.storyboard */,
 				759E145C23FE0832001A2E7A /* AppDelegate.swift */,
@@ -248,6 +251,7 @@
 				4A2D64E7240BDCAA0018BD41 /* InnerResourceView.swift in Sources */,
 				759E146123FE0832001A2E7A /* PDFViewController.swift in Sources */,
 				C3FB0DAB240686B3006D0EB3 /* File.swift in Sources */,
+				C3FB0DC3240C54BA006D0EB3 /* ResultsTableController.swift in Sources */,
 				4AD625AC240672720003E88A /* ResourceCell.swift in Sources */,
 				C3FB0DA9240686B3006D0EB3 /* Folder.swift in Sources */,
 				7BE203F4240BB1EE00DF1A45 /* Utils.swift in Sources */,

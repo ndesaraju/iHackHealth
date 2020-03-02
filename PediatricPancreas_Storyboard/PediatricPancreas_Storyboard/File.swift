@@ -16,6 +16,11 @@ class File: Resource {
     internal var _tags: [String] = []
     //insert variables associated with files here
     
+    init() {
+        _name = "";
+        _path = "";
+    }
+    
     init(name: String, path: String) {
         _name = name
         _path = path

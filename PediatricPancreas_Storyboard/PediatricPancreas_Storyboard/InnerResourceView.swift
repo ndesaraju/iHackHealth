@@ -18,7 +18,7 @@ class InnerResourceView: UIViewController {
     /**
      Variables
      */
-    var folderSelection = Folder(name: "", subfolders: [], files: [], tags: ["", ""], parents: []); // the current selected folder
+    var folderSelection = Folder(); // the current selected folder
     var fileSelection = File(name: "", path: ""); // the file to be selected
     var fileArray: [Resource] = []; // the array of files to be displayed on the screen
     

@@ -16,7 +16,7 @@ class PDFViewController: UIViewController {
     
     // Information from previous view controller.
     // Please find a way to display this file.
-    var fileSelection = File(name: "", path: "");
+    var fileSelection = File() ;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class PDFViewController: UIViewController {
         }
         
         let storage = Storage.storage().reference()
-        let path = File.allFiles[0].getPath()
+        let path = fileSelection.getPath()
         print(storage.bucket)
         let file = storage.child(path)
         file.downloadURL{ url, error in

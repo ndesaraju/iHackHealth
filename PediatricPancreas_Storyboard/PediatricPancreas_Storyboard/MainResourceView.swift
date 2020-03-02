@@ -18,13 +18,14 @@ class MainResourceView: UIViewController {
     /**
      Variables
      */
-    var folderSelection = Folder(name: "", subfolders: [], files: [], tags: ["", ""], parents: []); // the folder to be selected
+    var folderSelection = Folder(); // the folder to be selected
     var folderArray: [Resource] = []; // the array of folders to be displayed on the screen
     
-    var allFiles = [Resource](); // not sure what you need this for, but sure
     var filteredFiles = [Resource](); // not sure what you need this for, but sure
     
-    var searchController: UISearchController!;
+    var searchController: UISearchController!
+    
+    private var resultsTableController: ResultsTableController!
     
     /**
      Loads the view.
@@ -33,13 +34,21 @@ class MainResourceView: UIViewController {
         super.viewDidLoad();
         folderArray = createArray();
         
-        // search features
-        searchController = UISearchController(searchResultsController: nil);
-        searchController.searchResultsUpdater = self;
-        searchController.obscuresBackgroundDuringPresentation = false;
-        searchController.definesPresentationContext = true;
         
-        navigationItem.searchController = searchController;
+        resultsTableController =
+        self.storyboard?.instantiateViewController(withIdentifier: "ResultsTableController") as? ResultsTableController
+        resultsTableController.tableView.delegate = self
+
+        // search features
+        searchController = UISearchController(searchResultsController: resultsTableController)
+        searchController.delegate = self
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.autocapitalizationType = .none
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
+
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
         
     }
     
@@ -103,13 +112,15 @@ class MainResourceView: UIViewController {
 /**
 DIsplays the current folders for this view.
 */
-extension MainResourceView: UITableViewDataSource, UITableViewDelegate {
+extension MainResourceView: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
+        print(section)
         return folderArray.count;
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let resource = folderArray[indexPath.row];
         let cell = tableView.dequeueReusableCell(withIdentifier: "ResourceCell") as! ResourceCell;
         cell.setResource(resource: resource);
@@ -118,17 +129,30 @@ extension MainResourceView: UITableViewDataSource, UITableViewDelegate {
     
 }
 
+extension MainResourceView: UISearchBarDelegate {
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        updateSearchResults(for: searchController)
+    }
+
+}
+
 /**
  Search functionality should be implemented here.
  */
 extension MainResourceView: UISearchResultsUpdating {
-    
+
     /** Sets filteredList to be the files matching SEARCHTEXT and returns the number of valid files */
     private func filterFiles(for searchText: String) -> Int {
         let lower = searchText.lowercased()
         var count = 0
-        
-        for file in allFiles {
+        filteredFiles = []
+
+        for file in File.allFiles {
             if file.getName().lowercased().contains(lower) {
                 filteredFiles.append(file)
                 count += 1
@@ -144,10 +168,37 @@ extension MainResourceView: UISearchResultsUpdating {
         }
         return count
     }
-    
+
     func updateSearchResults(for searchController: UISearchController) {
-        filterFiles(for: searchController.searchBar.text ?? "") // Fix this
+        filterFiles(for: searchController.searchBar.text ?? "")
+
+        if let resultsController = searchController.searchResultsController as? ResultsTableController {
+            resultsController.filteredFiles = filteredFiles
+            resultsController.tableView.reloadData()
+        }
     }
-    
-    
+}
+
+extension MainResourceView: UISearchControllerDelegate {
+
+//    func presentSearchController(_ searchController: UISearchController) {
+//        //Swift.debugPrint("UISearchControllerDelegate invoked method: \(#function).")
+//    }
+//
+//    func willPresentSearchController(_ searchController: UISearchController) {
+//        //Swift.debugPrint("UISearchControllerDelegate invoked method: \(#function).")
+//    }
+//
+//    func didPresentSearchController(_ searchController: UISearchController) {
+//        //Swift.debugPrint("UISearchControllerDelegate invoked method: \(#function).")
+//    }
+//
+//    func willDismissSearchController(_ searchController: UISearchController) {
+//        //Swift.debugPrint("UISearchControllerDelegate invoked method: \(#function).")
+//    }
+//
+//    func didDismissSearchController(_ searchController: UISearchController) {
+//        //Swift.debugPrint("UISearchControllerDelegate invoked method: \(#function).")
+//    }
+
 }
