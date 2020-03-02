@@ -12,22 +12,23 @@ import FirebaseDatabase
 
 class Utils{
 
-//    static func getDownloadURL(storage : StorageReference, path : String) -> URL{
-//        let file = storage.child(path)
-//        
-//        var destination : [String] = []
-//        
-//        file.downloadURL{ url, error in
-//            print(error)
-//            print(url)
-//            print("fuck")
-//            destination.append(url!.absoluteString)
-//            return
-//        }
-//        let url = URL.init(fileURLWithPath: destination[0])
-//        return url
-//    }
-
+    /* get downloada URL from firebase, runs asynchronously so doesn't work */
+    static func getDownloadURL(storage : StorageReference, path : String) -> URL{
+        let file = storage.child(path)
+        
+        var destination : [String] = []
+        
+        file.downloadURL{ url, error in
+            print(error)
+            print(url)
+            print("fuck")
+            destination.append(url!.absoluteString)
+            return
+        }
+        let url = URL.init(fileURLWithPath: destination[0])
+        return url
+    }
+    /* download files synchronously */
     static func loadFileSync(url: URL, completion: @escaping (String?, Error?) -> Void){
         let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 
@@ -59,6 +60,7 @@ class Utils{
         }
     }
 
+    /*download files asynchronously*/
     static func loadFileAsync(url: URL, completion: @escaping (String?, Error?) -> Void){
         let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 
@@ -110,7 +112,7 @@ class Utils{
         }
     }
     
-    
+/*runs asynchronously in Firebase functions so it doesn't work*/
     static func getFileURL(downloadURL : URL) -> URL {
         var fileURL : [String] = []
         loadFileAsync(url: downloadURL) { (path, error) in
