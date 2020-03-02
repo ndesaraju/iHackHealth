@@ -210,12 +210,17 @@ extension MainResourceView: UISearchResultsUpdating {
     }
 
     func updateSearchResults(for searchController: UISearchController) {
-        filterFiles(for: searchController.searchBar.text ?? "")
+        let count = filterFiles(for: searchController.searchBar.text ?? "")
 
         if let resultsController = searchController.searchResultsController as? ResultsTableController {
             resultsController.filteredFiles = filteredFiles
             resultsController.tableView.reloadData()
         }
+        
+//        resultsTableController.resultsLabel.text = resultsTableController.filteredFiles.isEmpty ?
+//        NSLocalizedString("NoItemsFoundTitle", comment: "") :
+//        String(format: NSLocalizedString("Items found: %ld", comment: ""),
+//               resultsTableController.filteredFiles.count)
     }
 }
 
