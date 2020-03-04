@@ -14,13 +14,12 @@ class ResultsTableController: UITableViewController {
     
     var filteredFiles = [Resource]()
     
+    var fileSelection = File();
+    
     @IBOutlet weak var resultsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        let nib = UINib(nibName: "TableCell", bundle: nil)
-//        tableView.register(nib, forCellReuseIdentifier: tableViewCellIdentifier)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,4 +34,18 @@ class ResultsTableController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true);
+        self.fileSelection = filteredFiles[indexPath.row] as! File;
+        performSegue(withIdentifier: "searchSegue", sender: self);
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! PDFViewController;
+        
+        vc.fileSelection = self.fileSelection;
+    }
+    
+    
 }

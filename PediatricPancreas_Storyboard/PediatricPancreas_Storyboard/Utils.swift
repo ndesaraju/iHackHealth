@@ -21,7 +21,6 @@ class Utils{
         file.downloadURL{ url, error in
             print(error)
             print(url)
-            print("fuck")
             destination.append(url!.absoluteString)
             return
         }

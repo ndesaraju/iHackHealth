@@ -19,6 +19,7 @@ class MainResourceView: UIViewController {
      Variables
      */
     var folderSelection = Folder(); // the folder to be selected
+    var fileSelection = File();
     var folderArray: [Resource] = []; // the array of folders to be displayed on the screen
     
     var filteredFiles = [Resource](); // not sure what you need this for, but sure
@@ -49,6 +50,7 @@ class MainResourceView: UIViewController {
 
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        definesPresentationContext = true
         
     }
     
@@ -126,12 +128,19 @@ class MainResourceView: UIViewController {
         // implement select/deselect animation
         tableView.deselectRow(at: indexPath, animated: true);
         
-        // the folder that was selected
-        self.folderSelection = folderArray[indexPath.row] as! Folder;
-        
-        // performs a segue to the next view
-        performSegue(withIdentifier: "InnerResourceSegue", sender: self);
-        
+        // Check to see which table view cell was selected.
+        if tableView === self.tableView {
+            // the folder that was selected
+            self.folderSelection = folderArray[indexPath.row] as! Folder;
+            performSegue(withIdentifier: "InnerResourceSegue", sender: self);
+        } else {
+            
+//            resultsTableController.tableView(self.tableView, didSelectRowAt: indexPath)
+//
+            resultsTableController.fileSelection = resultsTableController.filteredFiles[indexPath.row] as! File;
+
+            resultsTableController.performSegue(withIdentifier: "searchSegue", sender: self);
+        }
     }
     
     /**
@@ -139,12 +148,13 @@ class MainResourceView: UIViewController {
      */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        // cast the segue destination
-        let vc = segue.destination as! InnerResourceView;
-        
-        // passes the current folder selection to the next view
-        vc.folderSelection = self.folderSelection;
-        
+        if segue.identifier == "InnerResourceSegue" {
+            let vc = segue.destination as! InnerResourceView;
+            vc.folderSelection = self.folderSelection;
+        } else {
+            let vc = segue.destination as! PDFViewController;
+            vc.fileSelection = self.fileSelection;
+        }
     }
     
 }

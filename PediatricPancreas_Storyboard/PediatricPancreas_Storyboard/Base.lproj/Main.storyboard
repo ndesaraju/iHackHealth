@@ -95,7 +95,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="Kip-fK-P1e">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="Kip-fK-P1e" customClass="ResourceCell" customModule="PediatricPancreas_Storyboard" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kip-fK-P1e" id="wug-3Y-CW8">
@@ -109,15 +109,17 @@
                             <outlet property="delegate" destination="8QV-jH-sxF" id="mcb-WI-Yld"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="nUm-vR-lja"/>
                     <connections>
                         <outlet property="resultsLabel" destination="i8d-Dh-2Pd" id="NWn-JS-TWz"/>
+                        <segue destination="IAa-Nh-06E" kind="show" identifier="searchSegue" id="pyq-Re-jd9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Caa-7E-XIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="861" y="827"/>
         </scene>
-        <!--Further Information-->
+        <!--Information-->
         <scene sceneID="7qV-nR-fxw">
             <objects>
                 <viewController id="Upn-Uv-903" customClass="InnerResourceView" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
@@ -200,7 +202,7 @@
             <objects>
                 <viewController id="IAa-Nh-06E" customClass="PDFViewController" customModule="PediatricPancreas_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qig-PO-z8M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o2q-db-Hvm" customClass="PDFView">
@@ -222,4 +224,7 @@
             <point key="canvasLocation" x="2341" y="139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pyq-Re-jd9"/>
+    </inferredMetricsTieBreakers>
 </document>
