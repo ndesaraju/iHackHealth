@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75DEE805240FA649007BD1E6 /* SymptomTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE804240FA649007BD1E6 /* SymptomTrackerViewController.swift */; };
+		75DEE81D240FD376007BD1E6 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE817240FD373007BD1E6 /* Resource.swift */; };
+		75DEE81E240FD376007BD1E6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE818240FD373007BD1E6 /* File.swift */; };
+		75DEE81F240FD376007BD1E6 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE819240FD374007BD1E6 /* Folder.swift */; };
+		75DEE820240FD376007BD1E6 /* InnerResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE81A240FD375007BD1E6 /* InnerResourceView.swift */; };
+		75DEE821240FD376007BD1E6 /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE81B240FD375007BD1E6 /* ResourceCell.swift */; };
+		75DEE822240FD376007BD1E6 /* MainResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE81C240FD376007BD1E6 /* MainResourceView.swift */; };
+		75DEE825240FD397007BD1E6 /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE823240FD396007BD1E6 /* ResultsTableController.swift */; };
+		75DEE826240FD397007BD1E6 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE824240FD397007BD1E6 /* PDFViewController.swift */; };
+		75DEE855241064FD007BD1E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75DEE854241064FD007BD1E6 /* GoogleService-Info.plist */; };
+		75DEE85724106554007BD1E6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DEE85624106554007BD1E6 /* Utils.swift */; };
+		75DEE85924106C35007BD1E6 /* Chronic pancreatitis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 75DEE85824106C35007BD1E6 /* Chronic pancreatitis.pdf */; };
+		75DEE85B24106C3B007BD1E6 /* Acute Pancreatitis.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 75DEE85A24106C3B007BD1E6 /* Acute Pancreatitis.pdf */; };
+		75EBD123240F3B6800309D6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD122240F3B6800309D6F /* AppDelegate.swift */; };
+		75EBD125240F3B6800309D6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD124240F3B6800309D6F /* SceneDelegate.swift */; };
+		75EBD127240F3B6800309D6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD126240F3B6800309D6F /* HomeViewController.swift */; };
+		75EBD129240F3B6800309D6F /* CareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD128240F3B6800309D6F /* CareViewController.swift */; };
+		75EBD12C240F3B6800309D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EBD12A240F3B6800309D6F /* Main.storyboard */; };
+		75EBD12E240F3B6A00309D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EBD12D240F3B6A00309D6F /* Assets.xcassets */; };
+		75EBD131240F3B6A00309D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EBD12F240F3B6A00309D6F /* LaunchScreen.storyboard */; };
+		75EBD139240F459200309D6F /* BinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD138240F459200309D6F /* BinderViewController.swift */; };
+		75EBD13B240F496E00309D6F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD13A240F496E00309D6F /* LoginViewController.swift */; };
+		75EBD147240F6AF800309D6F /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD146240F6AF800309D6F /* CalenderView.swift */; };
+		75EBD149240F6AFA00309D6F /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD148240F6AFA00309D6F /* MonthView.swift */; };
+		75EBD14B240F6B0600309D6F /* WeekdaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD14A240F6B0600309D6F /* WeekdaysView.swift */; };
+		75EBD150240F6B1700309D6F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD14D240F6B1700309D6F /* CalendarViewController.swift */; };
+		75EBD151240F6B1700309D6F /* BowelSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD14E240F6B1700309D6F /* BowelSurveyViewController.swift */; };
+		75EBD152240F6B1700309D6F /* AbPainSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD14F240F6B1700309D6F /* AbPainSurveyViewController.swift */; };
+		75EBD156240F6B2A00309D6F /* AbPainSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD154240F6B2A00309D6F /* AbPainSurveyViewSynchronizer.swift */; };
+		75EBD157240F6B2A00309D6F /* BowelSurveyViewSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD155240F6B2A00309D6F /* BowelSurveyViewSynchronizer.swift */; };
+		75EBD180240F6C8500309D6F /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBD16A240F6C6300309D6F /* CareKit.framework */; };
+		75EBD181240F6C8500309D6F /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBD16A240F6C6300309D6F /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75EBD183240F6C8A00309D6F /* CareKitStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBD173240F6C7000309D6F /* CareKitStore.framework */; };
+		75EBD184240F6C8A00309D6F /* CareKitStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBD173240F6C7000309D6F /* CareKitStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75EBD185240F6C9000309D6F /* CareKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBD17C240F6C7C00309D6F /* CareKitUI.framework */; };
+		75EBD186240F6C9000309D6F /* CareKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBD17C240F6C7C00309D6F /* CareKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75EBD187240F6C9400309D6F /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBD15F240F6C5800309D6F /* ResearchKit.framework */; };
+		75EBD188240F6C9400309D6F /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75EBD15F240F6C5800309D6F /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75EBD1A0240F770F00309D6F /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 75EBD19F240F770F00309D6F /* Images */; };
+		75EBD1A4240F782400309D6F /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1A3240F782400309D6F /* TipView.swift */; };
+		75EBD1A6240F7AE000309D6F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBD1A5240F7AE000309D6F /* TabBarViewController.swift */; };
+		A6091BE627F8A9A5CE74DD1E /* Pods_PancreatitisAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA4C06E4069BFF384E9768D /* Pods_PancreatitisAssistant.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75EBD15E240F6C5800309D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBD158240F6C5700309D6F /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		75EBD160240F6C5800309D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBD158240F6C5700309D6F /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		75EBD169240F6C6300309D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBD162240F6C6300309D6F /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		75EBD16B240F6C6300309D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBD162240F6C6300309D6F /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5196C7F9226F8F8F00F1C2A2;
+			remoteInfo = CareKitTests;
+		};
+		75EBD172240F6C7000309D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBD16D240F6C7000309D6F /* CareKitStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E784B8F82232EED600736CA5;
+			remoteInfo = CareKitStore;
+		};
+		75EBD174240F6C7000309D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBD16D240F6C7000309D6F /* CareKitStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E784B9012232EED600736CA5;
+			remoteInfo = CareKitStoreTests;
+		};
+		75EBD17B240F6C7C00309D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBD176240F6C7C00309D6F /* CareKitUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5174225B224185290054E97C;
+			remoteInfo = CareKitUI;
+		};
+		75EBD17D240F6C7C00309D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EBD176240F6C7C00309D6F /* CareKitUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 512B012E22C2F82900ABCB1D;
+			remoteInfo = CareKitUITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75EBD182240F6C8600309D6F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				75EBD184240F6C8A00309D6F /* CareKitStore.framework in Embed Frameworks */,
+				75EBD181240F6C8500309D6F /* CareKit.framework in Embed Frameworks */,
+				75EBD188240F6C9400309D6F /* ResearchKit.framework in Embed Frameworks */,
+				75EBD186240F6C9000309D6F /* CareKitUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DEB4E699114A45554AA6336 /* Pods-PancreatitisAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PancreatitisAssistant.debug.xcconfig"; path = "Target Support Files/Pods-PancreatitisAssistant/Pods-PancreatitisAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		1AE0EA7725D0035BF0FC7D9B /* Pods-PancreatitisAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PancreatitisAssistant.release.xcconfig"; path = "Target Support Files/Pods-PancreatitisAssistant/Pods-PancreatitisAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		2BA4C06E4069BFF384E9768D /* Pods_PancreatitisAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PancreatitisAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DEE804240FA649007BD1E6 /* SymptomTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomTrackerViewController.swift; sourceTree = "<group>"; };
+		75DEE817240FD373007BD1E6 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		75DEE818240FD373007BD1E6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		75DEE819240FD374007BD1E6 /* Folder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		75DEE81A240FD375007BD1E6 /* InnerResourceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerResourceView.swift; sourceTree = "<group>"; };
+		75DEE81B240FD375007BD1E6 /* ResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
+		75DEE81C240FD376007BD1E6 /* MainResourceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainResourceView.swift; sourceTree = "<group>"; };
+		75DEE823240FD396007BD1E6 /* ResultsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
+		75DEE824240FD397007BD1E6 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		75DEE854241064FD007BD1E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75DEE85624106554007BD1E6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		75DEE85824106C35007BD1E6 /* Chronic pancreatitis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Chronic pancreatitis.pdf"; path = "PancreatitisAssistant/Chronic pancreatitis.pdf"; sourceTree = SOURCE_ROOT; };
+		75DEE85A24106C3B007BD1E6 /* Acute Pancreatitis.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Acute Pancreatitis.pdf"; path = "PancreatitisAssistant/Acute Pancreatitis.pdf"; sourceTree = SOURCE_ROOT; };
+		75EBD11F240F3B6800309D6F /* PancreatitisAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PancreatitisAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EBD122240F3B6800309D6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75EBD124240F3B6800309D6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75EBD126240F3B6800309D6F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		75EBD128240F3B6800309D6F /* CareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareViewController.swift; sourceTree = "<group>"; };
+		75EBD12B240F3B6800309D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75EBD12D240F3B6A00309D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75EBD130240F3B6A00309D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75EBD132240F3B6A00309D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75EBD138240F459200309D6F /* BinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderViewController.swift; sourceTree = "<group>"; };
+		75EBD13A240F496E00309D6F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		75EBD146240F6AF800309D6F /* CalenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		75EBD148240F6AFA00309D6F /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		75EBD14A240F6B0600309D6F /* WeekdaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdaysView.swift; sourceTree = "<group>"; };
+		75EBD14D240F6B1700309D6F /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		75EBD14E240F6B1700309D6F /* BowelSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowelSurveyViewController.swift; sourceTree = "<group>"; };
+		75EBD14F240F6B1700309D6F /* AbPainSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbPainSurveyViewController.swift; sourceTree = "<group>"; };
+		75EBD154240F6B2A00309D6F /* AbPainSurveyViewSynchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbPainSurveyViewSynchronizer.swift; sourceTree = "<group>"; };
+		75EBD155240F6B2A00309D6F /* BowelSurveyViewSynchronizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowelSurveyViewSynchronizer.swift; sourceTree = "<group>"; };
+		75EBD158240F6C5700309D6F /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		75EBD162240F6C6300309D6F /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = "CareKit-master/CareKit/CareKit.xcodeproj"; sourceTree = "<group>"; };
+		75EBD16D240F6C7000309D6F /* CareKitStore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKitStore.xcodeproj; path = "CareKit-master/CareKitStore/CareKitStore.xcodeproj"; sourceTree = "<group>"; };
+		75EBD176240F6C7C00309D6F /* CareKitUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKitUI.xcodeproj; path = "CareKit-master/CareKitUI/CareKitUI.xcodeproj"; sourceTree = "<group>"; };
+		75EBD19F240F770F00309D6F /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		75EBD1A3240F782400309D6F /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
+		75EBD1A5240F7AE000309D6F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75EBD11C240F3B6800309D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EBD183240F6C8A00309D6F /* CareKitStore.framework in Frameworks */,
+				75EBD180240F6C8500309D6F /* CareKit.framework in Frameworks */,
+				75EBD187240F6C9400309D6F /* ResearchKit.framework in Frameworks */,
+				75EBD185240F6C9000309D6F /* CareKitUI.framework in Frameworks */,
+				A6091BE627F8A9A5CE74DD1E /* Pods_PancreatitisAssistant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75DEE816240FD32F007BD1E6 /* Binder */ = {
+			isa = PBXGroup;
+			children = (
+				75DEE818240FD373007BD1E6 /* File.swift */,
+				75DEE819240FD374007BD1E6 /* Folder.swift */,
+				75DEE81A240FD375007BD1E6 /* InnerResourceView.swift */,
+				75DEE81C240FD376007BD1E6 /* MainResourceView.swift */,
+				75DEE817240FD373007BD1E6 /* Resource.swift */,
+				75DEE85824106C35007BD1E6 /* Chronic pancreatitis.pdf */,
+				75DEE85624106554007BD1E6 /* Utils.swift */,
+				75DEE85A24106C3B007BD1E6 /* Acute Pancreatitis.pdf */,
+				75DEE81B240FD375007BD1E6 /* ResourceCell.swift */,
+			);
+			path = Binder;
+			sourceTree = "<group>";
+		};
+		75EBD116240F3B6800309D6F = {
+			isa = PBXGroup;
+			children = (
+				75EBD121240F3B6800309D6F /* PancreatitisAssistant */,
+				75EBD120240F3B6800309D6F /* Products */,
+				75EBD17F240F6C8500309D6F /* Frameworks */,
+				D1B3428163A5BDAD5A2FA0BA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		75EBD120240F3B6800309D6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD11F240F3B6800309D6F /* PancreatitisAssistant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75EBD121240F3B6800309D6F /* PancreatitisAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				75DEE816240FD32F007BD1E6 /* Binder */,
+				75EBD145240F6AE700309D6F /* Views */,
+				75EBD142240F651D00309D6F /* Main */,
+				75EBD19F240F770F00309D6F /* Images */,
+				75EBD12D240F3B6A00309D6F /* Assets.xcassets */,
+				75EBD12F240F3B6A00309D6F /* LaunchScreen.storyboard */,
+				75DEE854241064FD007BD1E6 /* GoogleService-Info.plist */,
+				75EBD132240F3B6A00309D6F /* Info.plist */,
+			);
+			path = PancreatitisAssistant;
+			sourceTree = "<group>";
+		};
+		75EBD142240F651D00309D6F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD122240F3B6800309D6F /* AppDelegate.swift */,
+				75EBD124240F3B6800309D6F /* SceneDelegate.swift */,
+				75EBD126240F3B6800309D6F /* HomeViewController.swift */,
+				75EBD128240F3B6800309D6F /* CareViewController.swift */,
+				75EBD138240F459200309D6F /* BinderViewController.swift */,
+				75EBD13A240F496E00309D6F /* LoginViewController.swift */,
+				75EBD1A5240F7AE000309D6F /* TabBarViewController.swift */,
+				75DEE804240FA649007BD1E6 /* SymptomTrackerViewController.swift */,
+				75DEE824240FD397007BD1E6 /* PDFViewController.swift */,
+				75DEE823240FD396007BD1E6 /* ResultsTableController.swift */,
+				75EBD12A240F3B6800309D6F /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		75EBD145240F6AE700309D6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD153240F6B1C00309D6F /* ViewSynchronizers */,
+				75EBD14C240F6B0C00309D6F /* ViewControllers */,
+				75EBD146240F6AF800309D6F /* CalenderView.swift */,
+				75EBD148240F6AFA00309D6F /* MonthView.swift */,
+				75EBD14A240F6B0600309D6F /* WeekdaysView.swift */,
+				75EBD1A3240F782400309D6F /* TipView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		75EBD14C240F6B0C00309D6F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD14D240F6B1700309D6F /* CalendarViewController.swift */,
+				75EBD14F240F6B1700309D6F /* AbPainSurveyViewController.swift */,
+				75EBD14E240F6B1700309D6F /* BowelSurveyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		75EBD153240F6B1C00309D6F /* ViewSynchronizers */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD154240F6B2A00309D6F /* AbPainSurveyViewSynchronizer.swift */,
+				75EBD155240F6B2A00309D6F /* BowelSurveyViewSynchronizer.swift */,
+			);
+			path = ViewSynchronizers;
+			sourceTree = "<group>";
+		};
+		75EBD159240F6C5700309D6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD15F240F6C5800309D6F /* ResearchKit.framework */,
+				75EBD161240F6C5800309D6F /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75EBD163240F6C6300309D6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD16A240F6C6300309D6F /* CareKit.framework */,
+				75EBD16C240F6C6300309D6F /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75EBD16E240F6C7000309D6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD173240F6C7000309D6F /* CareKitStore.framework */,
+				75EBD175240F6C7000309D6F /* CareKitStoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75EBD177240F6C7C00309D6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD17C240F6C7C00309D6F /* CareKitUI.framework */,
+				75EBD17E240F6C7C00309D6F /* CareKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75EBD17F240F6C8500309D6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75EBD176240F6C7C00309D6F /* CareKitUI.xcodeproj */,
+				75EBD16D240F6C7000309D6F /* CareKitStore.xcodeproj */,
+				75EBD162240F6C6300309D6F /* CareKit.xcodeproj */,
+				75EBD158240F6C5700309D6F /* ResearchKit.xcodeproj */,
+				2BA4C06E4069BFF384E9768D /* Pods_PancreatitisAssistant.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1B3428163A5BDAD5A2FA0BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DEB4E699114A45554AA6336 /* Pods-PancreatitisAssistant.debug.xcconfig */,
+				1AE0EA7725D0035BF0FC7D9B /* Pods-PancreatitisAssistant.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75EBD11E240F3B6800309D6F /* PancreatitisAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75EBD135240F3B6A00309D6F /* Build configuration list for PBXNativeTarget "PancreatitisAssistant" */;
+			buildPhases = (
+				FD5194CB9A20ED0D27A0C704 /* [CP] Check Pods Manifest.lock */,
+				75EBD11B240F3B6800309D6F /* Sources */,
+				75EBD11C240F3B6800309D6F /* Frameworks */,
+				75EBD11D240F3B6800309D6F /* Resources */,
+				75EBD182240F6C8600309D6F /* Embed Frameworks */,
+				2FD9C220DD1334B9A62DB23F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PancreatitisAssistant;
+			productName = PancreatitisAssistant;
+			productReference = 75EBD11F240F3B6800309D6F /* PancreatitisAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75EBD117240F3B6800309D6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = iHackHealth;
+				TargetAttributes = {
+					75EBD11E240F3B6800309D6F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 75EBD11A240F3B6800309D6F /* Build configuration list for PBXProject "PancreatitisAssistant" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75EBD116240F3B6800309D6F;
+			productRefGroup = 75EBD120240F3B6800309D6F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 75EBD163240F6C6300309D6F /* Products */;
+					ProjectRef = 75EBD162240F6C6300309D6F /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 75EBD16E240F6C7000309D6F /* Products */;
+					ProjectRef = 75EBD16D240F6C7000309D6F /* CareKitStore.xcodeproj */;
+				},
+				{
+					ProductGroup = 75EBD177240F6C7C00309D6F /* Products */;
+					ProjectRef = 75EBD176240F6C7C00309D6F /* CareKitUI.xcodeproj */;
+				},
+				{
+					ProductGroup = 75EBD159240F6C5700309D6F /* Products */;
+					ProjectRef = 75EBD158240F6C5700309D6F /* ResearchKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				75EBD11E240F3B6800309D6F /* PancreatitisAssistant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		75EBD15F240F6C5800309D6F /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 75EBD15E240F6C5800309D6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75EBD161240F6C5800309D6F /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 75EBD160240F6C5800309D6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75EBD16A240F6C6300309D6F /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 75EBD169240F6C6300309D6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75EBD16C240F6C6300309D6F /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 75EBD16B240F6C6300309D6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75EBD173240F6C7000309D6F /* CareKitStore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKitStore.framework;
+			remoteRef = 75EBD172240F6C7000309D6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75EBD175240F6C7000309D6F /* CareKitStoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitStoreTests.xctest;
+			remoteRef = 75EBD174240F6C7000309D6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75EBD17C240F6C7C00309D6F /* CareKitUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKitUI.framework;
+			remoteRef = 75EBD17B240F6C7C00309D6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75EBD17E240F6C7C00309D6F /* CareKitUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitUITests.xctest;
+			remoteRef = 75EBD17D240F6C7C00309D6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75EBD11D240F3B6800309D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EBD1A0240F770F00309D6F /* Images in Resources */,
+				75DEE85B24106C3B007BD1E6 /* Acute Pancreatitis.pdf in Resources */,
+				75DEE85924106C35007BD1E6 /* Chronic pancreatitis.pdf in Resources */,
+				75EBD131240F3B6A00309D6F /* LaunchScreen.storyboard in Resources */,
+				75DEE855241064FD007BD1E6 /* GoogleService-Info.plist in Resources */,
+				75EBD12E240F3B6A00309D6F /* Assets.xcassets in Resources */,
+				75EBD12C240F3B6800309D6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FD9C220DD1334B9A62DB23F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PancreatitisAssistant/Pods-PancreatitisAssistant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PancreatitisAssistant/Pods-PancreatitisAssistant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PancreatitisAssistant/Pods-PancreatitisAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5194CB9A20ED0D27A0C704 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PancreatitisAssistant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75EBD11B240F3B6800309D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75EBD1A6240F7AE000309D6F /* TabBarViewController.swift in Sources */,
+				75DEE805240FA649007BD1E6 /* SymptomTrackerViewController.swift in Sources */,
+				75EBD150240F6B1700309D6F /* CalendarViewController.swift in Sources */,
+				75EBD13B240F496E00309D6F /* LoginViewController.swift in Sources */,
+				75EBD151240F6B1700309D6F /* BowelSurveyViewController.swift in Sources */,
+				75DEE85724106554007BD1E6 /* Utils.swift in Sources */,
+				75EBD14B240F6B0600309D6F /* WeekdaysView.swift in Sources */,
+				75EBD129240F3B6800309D6F /* CareViewController.swift in Sources */,
+				75DEE821240FD376007BD1E6 /* ResourceCell.swift in Sources */,
+				75DEE820240FD376007BD1E6 /* InnerResourceView.swift in Sources */,
+				75EBD127240F3B6800309D6F /* HomeViewController.swift in Sources */,
+				75DEE826240FD397007BD1E6 /* PDFViewController.swift in Sources */,
+				75EBD156240F6B2A00309D6F /* AbPainSurveyViewSynchronizer.swift in Sources */,
+				75DEE81D240FD376007BD1E6 /* Resource.swift in Sources */,
+				75EBD152240F6B1700309D6F /* AbPainSurveyViewController.swift in Sources */,
+				75DEE822240FD376007BD1E6 /* MainResourceView.swift in Sources */,
+				75DEE81F240FD376007BD1E6 /* Folder.swift in Sources */,
+				75EBD149240F6AFA00309D6F /* MonthView.swift in Sources */,
+				75EBD147240F6AF800309D6F /* CalenderView.swift in Sources */,
+				75EBD139240F459200309D6F /* BinderViewController.swift in Sources */,
+				75EBD123240F3B6800309D6F /* AppDelegate.swift in Sources */,
+				75EBD157240F6B2A00309D6F /* BowelSurveyViewSynchronizer.swift in Sources */,
+				75EBD125240F3B6800309D6F /* SceneDelegate.swift in Sources */,
+				75DEE825240FD397007BD1E6 /* ResultsTableController.swift in Sources */,
+				75DEE81E240FD376007BD1E6 /* File.swift in Sources */,
+				75EBD1A4240F782400309D6F /* TipView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75EBD12A240F3B6800309D6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75EBD12B240F3B6800309D6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75EBD12F240F3B6A00309D6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75EBD130240F3B6A00309D6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75EBD133240F3B6A00309D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75EBD134240F3B6A00309D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75EBD136240F3B6A00309D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DEB4E699114A45554AA6336 /* Pods-PancreatitisAssistant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGA8BZRPF2;
+				INFOPLIST_FILE = PancreatitisAssistant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iHackHealth.PancreatitisAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75EBD137240F3B6A00309D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE0EA7725D0035BF0FC7D9B /* Pods-PancreatitisAssistant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CGA8BZRPF2;
+				INFOPLIST_FILE = PancreatitisAssistant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iHackHealth.PancreatitisAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75EBD11A240F3B6800309D6F /* Build configuration list for PBXProject "PancreatitisAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EBD133240F3B6A00309D6F /* Debug */,
+				75EBD134240F3B6A00309D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75EBD135240F3B6A00309D6F /* Build configuration list for PBXNativeTarget "PancreatitisAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75EBD136240F3B6A00309D6F /* Debug */,
+				75EBD137240F3B6A00309D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75EBD117240F3B6800309D6F /* Project object */;
+}
